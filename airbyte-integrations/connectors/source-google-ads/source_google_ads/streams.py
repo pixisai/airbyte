@@ -889,15 +889,6 @@ class AdGroupByDateHour(AdGroup):
 
     primary_key = ["ad_group.id", "segments.date", "segments.hour"]
 
-    def get_query(self, stream_slice: Mapping[str, Any] = None) -> str:
-        fields = GoogleAds.get_fields_from_schema(self.get_json_schema())
-        # validation that the customer is not a manager
-        # due to unsupported metrics.cost_micros field and removing it in case custom is a manager
-        if [customer for customer in self.customers if customer.id == stream_slice["customer_id"]][0].is_manager_account:
-            fields = [field for field in fields if field != "metrics.cost_micros"]
-        table_name = 'ad_group'
-        start_date, end_date = stream_slice.get("start_date"), stream_slice.get("end_date")
-        cursor_condition = [f"{self.cursor_field} >= '{start_date}' AND {self.cursor_field} <= '{end_date}'"]
 
 class CampaignByDayOfWeek(Campaign):
     """
@@ -930,6 +921,13 @@ class KeywordViewByDayOfWeek(KeywordView):
 
     primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.day_of_week"]
 
+
+class CampaignByMonth(Campaign):
+    """
+    Campaign by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.month"]
 
 
         query = GoogleAds.convert_schema_into_query(

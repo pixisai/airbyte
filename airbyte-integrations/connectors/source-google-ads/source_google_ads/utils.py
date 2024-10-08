@@ -47,6 +47,11 @@ REPORT_MAPPING = {
     "ad_group_by_day_of_week":"ad_group",
     "ad_group_ad_by_day_of_week":"ad_group_ad",
     "keyword_view_by_day_of_week":"keyword_view",
+    "campaign_by_month":"campaign",
+    "ad_group_by_month":"ad_group",
+    "ad_group_ad_by_month":"ad_group_ad",
+    "keyword_view_by_month":"keyword_view"
+
 }
 
 

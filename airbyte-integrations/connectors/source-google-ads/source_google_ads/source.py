@@ -278,6 +278,8 @@ class SourceGoogleAds(AbstractSource):
             AdGroupByDateHour(**incremental_config),
             AdGroupByDayOfWeek(**incremental_config),
             AdGroupAdByDayOfWeek(**incremental_config),
+            AdGroupByMonth(**incremental_config),
+            AdGroupAdByMonth(**incremental_config),
         ]
         # Metrics streams cannot be requested for a manager account.
         if non_manager_accounts:
@@ -297,6 +299,9 @@ class SourceGoogleAds(AbstractSource):
                     CampaignByDateHour(**non_manager_incremental_config),
                     CampaignByDayOfWeek(**non_manager_incremental_config),
                     KeywordViewByDayOfWeek(**non_manager_incremental_config),
+                    CampaignByMonth(**non_manager_incremental_config),
+                    KeywordViewByMonth(**non_manager_incremental_config),
+
                 ]
             )
 
