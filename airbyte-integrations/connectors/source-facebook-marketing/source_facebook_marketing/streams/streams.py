@@ -345,3 +345,31 @@ class AdsInsightsDemographicsDMARegion(AdsInsights):
 class AdsInsightsDemographicsGender(AdsInsights):
     breakdowns = ["gender"]
     action_breakdowns = ["action_type"]
+
+class AdsInsightsGender(AdsInsights):
+    breakdowns = ["gender"]
+    action_breakdowns = []
+
+class AdsInsightsAge(AdsInsights):
+    breakdowns = ["age"]
+    action_breakdowns = []
+
+class AdsInsightsHourlyStatsAggregatedByAdvertiserTimeZone(AdsInsights):
+    breakdowns = ["hourly_stats_aggregated_by_advertiser_time_zone"]
+    action_breakdowns = []
+
+class AdsInsightsHourlyStatsAggregatedByAudienceTimeZone(AdsInsights):
+    breakdowns = ["hourly_stats_aggregated_by_audience_time_zone"]
+    action_breakdowns = []
+
+class AdsInsightsDevicePlatform(AdsInsights):
+    breakdowns = ["device_platform"]
+    action_breakdowns = []
+
+class AdsInsightsPlatformPosition(AdsInsights):
+    breakdowns = ["platform_position"]
+    action_breakdowns = []
+
+class AdsInsightsImpressionDevice(AdsInsights):
+    breakdowns = ["impression_device"]
+    action_breakdowns = []
