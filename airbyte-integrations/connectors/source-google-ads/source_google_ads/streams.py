@@ -930,7 +930,25 @@ class CampaignByMonth(Campaign):
     primary_key = ["campaign.id", "segments.date", "segments.month"]
 
 
-        query = GoogleAds.convert_schema_into_query(
-            fields=fields, table_name=table_name, conditions=cursor_condition, order_field=self.cursor_field
-        )
-        return query
+class AdGroupByMonth(AdGroup):
+    """
+    Ad Group by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.month"]
+
+
+class AdGroupAdByMonth(AdGroupAd):
+    """
+    Ad Group Ad by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date","segments.month"]
+
+
+class KeywordViewByMonth(KeywordView):
+    """
+    Keyword View by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.month"]
