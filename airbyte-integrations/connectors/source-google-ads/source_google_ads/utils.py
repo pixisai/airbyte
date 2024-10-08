@@ -40,6 +40,13 @@ REPORT_MAPPING = {
     "campaign_real_time_bidding_settings": "campaign",
     "campaign_bidding_strategy": "campaign",
     "service_accounts": "customer",
+    "campaign_by_date":"campaign",
+    "campaign_by_date_hour":"campaign",
+    "ad_group_by_date_hour":"ad_group",
+    "campaign_by_day_of_week":"campaign",
+    "ad_group_by_day_of_week":"ad_group",
+    "ad_group_ad_by_day_of_week":"ad_group_ad",
+    "keyword_view_by_day_of_week":"keyword_view",
 }
 
 

@@ -43,7 +43,18 @@ from .streams import (
     ShoppingPerformanceView,
     TopicView,
     UserInterest,
-    UserLocationView, CampaignByDate, AdGroupByDateHour, CampaignByDateHour
+    UserLocationView,
+    CampaignByDate,
+    AdGroupByDateHour,
+    CampaignByDateHour,
+    AdGroupByDayOfWeek,
+    AdGroupAdByDayOfWeek,
+    CampaignByDayOfWeek,
+    KeywordViewByDayOfWeek,
+    AdGroupByMonth,
+    AdGroupAdByMonth,
+    CampaignByMonth,
+    KeywordViewByMonth
 )
 from .utils import GAQL, logger, traced_exception
 
@@ -265,6 +276,8 @@ class SourceGoogleAds(AbstractSource):
             Label(**default_config),
             UserInterest(**default_config),
             AdGroupByDateHour(**incremental_config),
+            AdGroupByDayOfWeek(**incremental_config),
+            AdGroupAdByDayOfWeek(**incremental_config),
         ]
         # Metrics streams cannot be requested for a manager account.
         if non_manager_accounts:
@@ -282,6 +295,8 @@ class SourceGoogleAds(AbstractSource):
                     KeywordView(**non_manager_incremental_config),
                     CampaignByDate(**non_manager_incremental_config),
                     CampaignByDateHour(**non_manager_incremental_config),
+                    CampaignByDayOfWeek(**non_manager_incremental_config),
+                    KeywordViewByDayOfWeek(**non_manager_incremental_config),
                 ]
             )
 

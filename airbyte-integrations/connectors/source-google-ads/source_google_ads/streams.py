@@ -866,43 +866,27 @@ class CampaignCriterion(IncrementalEventsStream):
     resource_type = "CAMPAIGN_CRITERION"
     cursor_field = "change_status.last_change_date_time"
 
+
 class CampaignByDate(Campaign):
     """
-    Daily Campaign stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    Campaign by Date stream: https://developers.google.com/google-ads/api/fields/v17/campaign
     """
     primary_key = ["campaign.id", "segments.date"]
-    def get_query(self, stream_slice: Mapping[str, Any] = None) -> str:
-        fields = GoogleAds.get_fields_from_schema(self.get_json_schema())
-        table_name = 'campaign'
 
-        start_date, end_date = stream_slice.get("start_date"), stream_slice.get("end_date")
-        cursor_condition = [f"{self.cursor_field} >= '{start_date}' AND {self.cursor_field} <= '{end_date}'"]
-
-        query = GoogleAds.convert_schema_into_query(
-            fields=fields, table_name=table_name, conditions=cursor_condition, order_field=self.cursor_field
-        )
-        return query
 
 class CampaignByDateHour(Campaign):
     """
-    Daily Campaign stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    Campaign by Date and Hour stream: https://developers.google.com/google-ads/api/fields/v17/campaign
     """
-    primary_key = ["campaign.id", "segments.date"]
-    def get_query(self, stream_slice: Mapping[str, Any] = None) -> str:
-        fields = GoogleAds.get_fields_from_schema(self.get_json_schema())
-        table_name = 'campaign'
 
-        start_date, end_date = stream_slice.get("start_date"), stream_slice.get("end_date")
-        cursor_condition = [f"{self.cursor_field} >= '{start_date}' AND {self.cursor_field} <= '{end_date}'"]
+    primary_key = ["campaign.id", "segments.date","segments.hour"]
 
-        query = GoogleAds.convert_schema_into_query(
-            fields=fields, table_name=table_name, conditions=cursor_condition, order_field=self.cursor_field
-        )
-        return query
+
 class AdGroupByDateHour(AdGroup):
     """
-    Hourly Ad Group stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    Ad Group by Date and Hour stream : https://developers.google.com/google-ads/api/fields/v17/ad_group
     """
+
     primary_key = ["ad_group.id", "segments.date", "segments.hour"]
 
     def get_query(self, stream_slice: Mapping[str, Any] = None) -> str:
@@ -914,6 +898,39 @@ class AdGroupByDateHour(AdGroup):
         table_name = 'ad_group'
         start_date, end_date = stream_slice.get("start_date"), stream_slice.get("end_date")
         cursor_condition = [f"{self.cursor_field} >= '{start_date}' AND {self.cursor_field} <= '{end_date}'"]
+
+class CampaignByDayOfWeek(Campaign):
+    """
+    Campaign by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.day_of_week"]
+
+
+class AdGroupByDayOfWeek(AdGroup):
+    """
+    Ad Group by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.day_of_week"]
+
+
+class AdGroupAdByDayOfWeek(AdGroupAd):
+    """
+    Ad Group Ad by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date","segments.day_of_week"]
+
+
+class KeywordViewByDayOfWeek(KeywordView):
+    """
+    Keyword View by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.day_of_week"]
+
+
 
         query = GoogleAds.convert_schema_into_query(
             fields=fields, table_name=table_name, conditions=cursor_condition, order_field=self.cursor_field
