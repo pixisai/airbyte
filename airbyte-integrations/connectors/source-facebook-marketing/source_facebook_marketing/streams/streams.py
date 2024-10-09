@@ -347,15 +347,6 @@ class AdsInsightsDemographicsGender(AdsInsights):
     action_breakdowns = ["action_type"]
 
 
-class AdsInsightsGender(AdsInsights):
-    breakdowns = ["gender"]
-    action_breakdowns = []
-
-
-class AdsInsightsAge(AdsInsights):
-    breakdowns = ["age"]
-    action_breakdowns = []
-
 
 class AdsInsightsHourlyStatsAggregatedByAdvertiserTimeZone(AdsInsights):
     breakdowns = ["hourly_stats_aggregated_by_advertiser_time_zone"]
@@ -364,11 +355,6 @@ class AdsInsightsHourlyStatsAggregatedByAdvertiserTimeZone(AdsInsights):
 
 class AdsInsightsHourlyStatsAggregatedByAudienceTimeZone(AdsInsights):
     breakdowns = ["hourly_stats_aggregated_by_audience_time_zone"]
-    action_breakdowns = []
-
-
-class AdsInsightsDevicePlatform(AdsInsights):
-    breakdowns = ["device_platform"]
     action_breakdowns = []
 
 
@@ -382,21 +368,3 @@ class AdsInsightsImpressionDevice(AdsInsights):
     action_breakdowns = []
 
 
-class AdsInsightsCountryWithoutActionBreakdowns(AdsInsights):
-    breakdowns = ["country"]
-    action_breakdowns = []
-
-
-class AdsInsightsRegionWithoutActionBreakdowns(AdsInsights):
-    breakdowns = ["region"]
-    action_breakdowns = []
-
-
-class AdsInsightsDmaWithoutActionBreakdowns(AdsInsights):
-    breakdowns = ["dma"]
-    action_breakdowns = []
-
-
-class AdsInsightsPublisherPlatform(AdsInsights):
-    breakdowns = ["publisher_platform"]
-    action_breakdowns = []
