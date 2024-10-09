@@ -808,8 +808,8 @@
       "description": "Average value per conversion in the campaign.",
       "type": ["null", "number"]
     },
-    "segments.geo_target_district": {
-      "description": "Geo target district segment used for campaign data.",
+    "segments.device": {
+      "description": "Device segment used for campaign data.",
       "type": ["null", "string"]
     }
   }

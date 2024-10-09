@@ -808,8 +808,8 @@
       "description": "Average value per conversion in the campaign.",
       "type": ["null", "number"]
     },
-    "segments.geo_target_province": {
-      "description": "Geo target province segment used for campaign data.",
+    "segments.search_term_match_type": {
+      "description": "The search term match type for the ad group ad data.",
       "type": ["null", "string"]
     }
   }

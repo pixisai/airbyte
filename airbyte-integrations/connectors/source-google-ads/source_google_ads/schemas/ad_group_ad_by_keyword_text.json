@@ -808,8 +808,8 @@
       "description": "Average value per conversion in the campaign.",
       "type": ["null", "number"]
     },
-    "segments.geo_target_metro": {
-      "description": "Geo target metro segment used for campaign data.",
+    "segments.keyword.info.text": {
+      "description": "The text of the keyword segment.",
       "type": ["null", "string"]
     }
   }

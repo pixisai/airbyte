@@ -11,7 +11,7 @@ data:
   connectorSubtype: api
   connectorType: source
   definitionId: 253487c0-2246-43ba-a21f-5116b20a2c50
-  dockerImageTag: 3.8.0
+  dockerImageTag: 3.8.1
   dockerRepository: airbyte/source-google-ads
   documentationUrl: https://docs.airbyte.com/integrations/sources/google-ads
   githubIssueLabel: source-google-ads
@@ -101,22 +101,37 @@ data:
       - ad_group_by_province
       - ad_group_by_region
       - ad_group_by_state
-      - ad_group_ad_by_city
-      - ad_group_ad_by_district
-      - ad_group_ad_by_metro
-      - ad_group_ad_by_most_specific_location
-      - ad_group_ad_by_postal_code
-      - ad_group_ad_by_province
-      - ad_group_ad_by_region
-      - ad_group_ad_by_state
-      - keyword_view_by_city
-      - keyword_view_by_district
-      - keyword_view_by_metro
-      - keyword_view_by_most_specific_location
-      - keyword_view_by_postal_code
-      - keyword_view_by_province
-      - keyword_view_by_region
-      - keyword_view_by_state
+      - ad_group_ad_by_ad_network_type
+      - ad_group_ad_by_click_type
+      - ad_group_ad_by_conversion_action_name
+      - ad_group_ad_by_conversion_source
+      - ad_group_ad_by_device
+      - ad_group_ad_by_keyword_match_type
+      - ad_group_ad_by_keyword_text
+      - ad_group_ad_by_search_term_match_type
+      - ad_group_by_ad_network
+      - ad_group_by_click_type
+      - ad_group_by_conversion_action_name
+      - ad_group_by_conversion_source
+      - ad_group_by_device
+      - ad_group_product_item_id
+      - ad_group_product_merchant_id
+      - ad_group_product_title
+      - ad_group_product_type_l1
+      - ad_group_product_type_l2
+      - ad_group_product_type_l3
+      - campaign_by_ad_network_type
+      - campaign_by_click_type
+      - campaign_by_conversion_action_name
+      - campaign_by_conversion_source
+      - campaign_by_device
+      - campaign_by_product_item_id
+      - campaign_by_product_merchant_id
+      - campaign_by_product_title
+      - campaign_by_product_type_l1
+      - campaign_by_product_type_l2
+      - campaign_by_product
+
   supportLevel: certified
   tags:
     - language:python

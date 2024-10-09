@@ -808,8 +808,8 @@
       "description": "Average value per conversion in the campaign.",
       "type": ["null", "number"]
     },
-    "segments.geo_target_region": {
-      "description": "Geo target region segment used for campaign data.",
+    "segments.external_conversion_source": {
+      "description": "External conversion source segment.",
       "type": ["null", "string"]
     }
   }

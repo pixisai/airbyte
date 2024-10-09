@@ -254,8 +254,8 @@
       "description": "Search exact match impression share metric for the campaign.",
       "type": ["null", "number"]
     },
-    "segments.geo_target_city": {
-      "description": "Geo target city segment used for campaign data.",
+    "segments.conversion_action_name": {
+      "description": "Conversion action name segment used for campaign data.",
       "type": ["null", "string"]
     }
   }

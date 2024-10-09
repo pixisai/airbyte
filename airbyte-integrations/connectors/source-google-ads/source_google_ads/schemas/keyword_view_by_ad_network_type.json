@@ -254,8 +254,8 @@
       "description": "Search exact match impression share metric for the campaign.",
       "type": ["null", "number"]
     },
-    "segments.geo_target_postal_code": {
-      "description": "Geo-targeting segment by postal code.",
+    "segments.ad_network_type": {
+      "description": "Ad network type segment used for campaign data.",
       "type": ["null", "string"]
     }
   }

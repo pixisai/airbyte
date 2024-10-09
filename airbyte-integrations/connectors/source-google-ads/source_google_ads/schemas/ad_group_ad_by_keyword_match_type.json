@@ -808,8 +808,8 @@
       "description": "Average value per conversion in the campaign.",
       "type": ["null", "number"]
     },
-    "segments.geo_target_postal_code": {
-      "description": "Geo-targeting segment by postal code.",
+    "segments.keyword.info.match_type": {
+      "description": "Match type for the keyword segment.",
       "type": ["null", "string"]
     }
   }

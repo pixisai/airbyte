@@ -254,8 +254,8 @@
       "description": "Search exact match impression share metric for the campaign.",
       "type": ["null", "number"]
     },
-    "segments.geo_target_province": {
-      "description": "Geo target province segment used for campaign data.",
+    "segments.external_conversion_source": {
+      "description": "External conversion source segment.",
       "type": ["null", "string"]
     }
   }

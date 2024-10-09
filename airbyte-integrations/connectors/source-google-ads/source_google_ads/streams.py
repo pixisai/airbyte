@@ -1304,3 +1304,264 @@ class KeywordViewByState(KeywordView):
     Keyword View By State stream.
     """
     primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.geo_target_state"]
+
+
+class CampaignByDevice(Campaign):
+    """
+    Campaign By Device stream
+    """
+    primary_key = ["campaign.id", "segments.device", "segments.date"]
+
+
+class CampaignByClickType(Campaign):
+    """
+    Campaign By Click Type stream
+    """
+    primary_key = ["campaign.id", "segments.click_type", "segments.date"]
+
+
+class CampaignByConversionSource(Campaign):
+    """
+    Campaign By Conversion Source stream
+    """
+    primary_key = ["campaign.id", "segments.external_conversion_source", "segments.date"]
+
+
+class CampaignByConversionActionName(Campaign):
+    """
+    Campaign By Conversion Action Name stream
+    """
+    primary_key = ["campaign.id", "segments.conversion_action_name", "segments.date"]
+
+
+class CampaignByCountry(Campaign):
+    """
+    Campaign By Country stream
+    """
+    primary_key = ["campaign.id", "segments.geo_target_country", "segments.date"]
+
+
+class CampaignByProductItemId(Campaign):
+    """
+    Campaign By Product Item ID stream
+    """
+    primary_key = ["campaign.id", "segments.product_item_id", "segments.date"]
+
+
+class CampaignByProductMerchantId(Campaign):
+    """
+    Campaign By Product Merchant ID stream
+    """
+    primary_key = ["campaign.id", "segments.product_merchant_id", "segments.date"]
+
+
+class CampaignByProductTitle(Campaign):
+    """
+    Campaign By Product Title stream
+    """
+    primary_key = ["campaign.id", "segments.product_title", "segments.date"]
+
+
+class CampaignByProductTypeL1(Campaign):
+    """
+    Campaign By Product Type (1st Level) stream
+    """
+    primary_key = ["campaign.id", "segments.product_type_l1", "segments.date"]
+
+
+class CampaignByProductTypeL2(Campaign):
+    """
+    Campaign By Product Type (2nd Level) stream
+    """
+    primary_key = ["campaign.id", "segments.product_type_l2", "segments.date"]
+
+
+class CampaignByProductTypeL3(Campaign):
+    """
+    Campaign By Product Type (3rd Level) stream
+    """
+    primary_key = ["campaign.id", "segments.product_type_l3", "segments.date"]
+
+
+class CampaignByAdNetworkType(Campaign):
+    """
+    Campaign By Ad Network Type stream
+    """
+    primary_key = ["campaign.id", "segments.ad_network_type", "segments.date"]
+
+
+class AdGroupByDevice(AdGroup):
+    """
+    Ad Group By Device stream
+    """
+    primary_key = ["ad_group.id", "segments.device", "segments.date"]
+
+
+class AdGroupByClickType(AdGroup):
+    """
+    Ad Group By Click Type stream
+    """
+    primary_key = ["ad_group.id", "segments.click_type", "segments.date"]
+
+
+class AdGroupByConversionSource(AdGroup):
+    """
+    Ad Group By Conversion Source stream
+    """
+    primary_key = ["ad_group.id", "segments.external_conversion_source", "segments.date"]
+
+
+class AdGroupByConversionActionName(AdGroup):
+    """
+    Ad Group By Conversion Action Name stream
+    """
+    primary_key = ["ad_group.id", "segments.conversion_action_name", "segments.date"]
+
+
+class AdGroupByCountry(AdGroup):
+    """
+    Ad Group By Country stream
+    """
+    primary_key = ["ad_group.id", "country", "segments.date"]
+
+
+class AdGroupByProductItemId(AdGroup):
+    """
+    Ad Group By Product Item ID stream
+    """
+    primary_key = ["ad_group.id", "segments.product_item_id", "segments.date"]
+
+
+class AdGroupByProductMerchantId(AdGroup):
+    """
+    Ad Group By Product Merchant ID stream
+    """
+    primary_key = ["ad_group.id", "segments.product_merchant_id", "segments.date"]
+
+
+class AdGroupByProductTitle(AdGroup):
+    """
+    Ad Group By Product Title stream
+    """
+    primary_key = ["ad_group.id", "segments.product_title", "segments.date"]
+
+
+class AdGroupByProductTypeL1(AdGroup):
+    """
+    Ad Group By Product Type (1st Level) stream
+    """
+    primary_key = ["ad_group.id", "segments.product_type_l1", "segments.date"]
+
+
+class AdGroupByProductTypeL2(AdGroup):
+    """
+    Ad Group By Product Type (2nd Level) stream
+    """
+    primary_key = ["ad_group.id", "segments.product_type_l2", "segments.date"]
+
+
+class AdGroupByProductTypeL3(AdGroup):
+    """
+    Ad Group By Product Type (3rd Level) stream
+    """
+    primary_key = ["ad_group.id", "segments.product_type_l3", "segments.date"]
+
+
+class AdGroupByAdNetworkType(AdGroup):
+    """
+    Ad Group By Ad Network Type stream
+    """
+    primary_key = ["ad_group.id", "segments.ad_network_type", "segments.date"]
+
+
+class AdGroupAdByKeywordMatchType(AdGroupAd):
+    """
+    Ad Group Ad By Keyword Match Type stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.keyword.info.match_type", "segments.date"]
+
+
+class AdGroupAdByKeywordText(AdGroupAd):
+    """
+    Ad Group Ad By Keyword Text stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.keyword.info.text", "segments.date"]
+
+
+class AdGroupAdBySearchTermMatchType(AdGroupAd):
+    """
+    Ad Group Ad By Search Term Match Type stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.search_term_match_type", "segments.date"]
+
+
+class AdGroupAdByDevice(AdGroupAd):
+    """
+    Ad Group Ad By Device stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.device", "segments.date"]
+
+
+class AdGroupAdByClickType(AdGroupAd):
+    """
+    Ad Group Ad By Click Type stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.click_type", "segments.date"]
+
+
+class AdGroupAdByConversionSource(AdGroupAd):
+    """
+    Ad Group Ad By Conversion Source stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.external_conversion_source", "segments.date"]
+
+
+class AdGroupAdByConversionActionName(AdGroupAd):
+    """
+    Ad Group Ad By Conversion Action Name stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.conversion_action_name", "segments.date"]
+
+
+class AdGroupAdByAdNetworkType(AdGroupAd):
+    """
+    Ad Group Ad By Ad Network Type stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.ad_network_type", "segments.date"]
+
+
+class KeywordViewByDevice(KeywordView):
+    """
+    Keyword View By Device stream
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.device", "segments.date"]
+
+
+class KeywordViewByClickType(KeywordView):
+    """
+    Keyword View By Click Type stream
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.click_type", "segments.date"]
+
+
+class KeywordViewByConversionSource(KeywordView):
+    """
+    Keyword View By Conversion Source stream
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.external_conversion_source", "segments.date"]
+
+
+class KeywordViewByConversionActionName(KeywordView):
+    """
+    Keyword View By Conversion Action Name stream
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.conversion_action_name", "segments.date"]
+
+
+class KeywordViewByAdNetworkType(KeywordView):
+    """
+    Keyword View By Ad Network Type stream
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.ad_network_type", "segments.date"]
+
+
