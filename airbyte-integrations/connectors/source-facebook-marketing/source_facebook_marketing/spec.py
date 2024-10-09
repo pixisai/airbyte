@@ -321,3 +321,9 @@ class ConnectorConfig(BaseConfig):
         airbyte_secret=True,
         airbyte_hidden=True,
     )
+
+    action_breakdowns: Optional[List[ValidActionBreakdowns]] = Field(
+        title="Action Breakdowns",
+        description="A list of chosen action_breakdowns for action_breakdowns",
+        default=[],
+    )
