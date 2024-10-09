@@ -54,7 +54,18 @@ from .streams import (
     AdGroupByMonth,
     AdGroupAdByMonth,
     CampaignByMonth,
-    KeywordViewByMonth
+    KeywordViewByMonth,
+    KeywordViewByMonthOfYear,
+    CampaignByMonthOfYear,
+    AdGroupAdByMonthOfYear,
+    AdGroupByMonthOfYear, CampaignByQuarter, KeywordViewByQuarter, CampaignByWeek, KeywordViewByWeek, CampaignByYear, KeywordViewByYear,
+    AdGroupAdByYear, AdGroupByYear, AdGroupAdByWeek, AdGroupByWeek, AdGroupAdByQuarter, AdGroupByQuarter, CampaignByCity,
+    CampaignByDistrict, CampaignByMetro, CampaignByMostSpecificLocation, CampaignByPostalCode, CampaignByProvince, CampaignByRegion,
+    CampaignByState, AdGroupByCity, AdGroupByDistrict, AdGroupByMetro, AdGroupByMostSpecificLocation, AdGroupByPostalCode,
+    AdGroupByProvince, AdGroupByRegion, AdGroupByState, AdGroupAdByState, AdGroupAdByRegion, AdGroupAdByProvince, AdGroupAdByPostalCode,
+    AdGroupAdByMostSpecificLocation, AdGroupAdByMetro, AdGroupAdByDistrict, AdGroupAdByCity, KeywordViewByState, KeywordViewByRegion,
+    KeywordViewByProvince, KeywordViewByPostalCode, KeywordViewByMostSpecificLocation, KeywordViewByMetro, KeywordViewByDistrict,
+    KeywordViewByCity
 )
 from .utils import GAQL, logger, traced_exception
 
@@ -280,6 +291,31 @@ class SourceGoogleAds(AbstractSource):
             AdGroupAdByDayOfWeek(**incremental_config),
             AdGroupByMonth(**incremental_config),
             AdGroupAdByMonth(**incremental_config),
+            AdGroupByMonthOfYear(**incremental_config),
+            AdGroupAdByMonthOfYear(**incremental_config),
+            AdGroupByQuarter(**incremental_config),
+            AdGroupAdByQuarter(**incremental_config),
+            AdGroupByWeek(**incremental_config),
+            AdGroupAdByWeek(**incremental_config),
+            AdGroupByYear(**incremental_config),
+            AdGroupAdByYear(**incremental_config),
+            AdGroupByCity(**incremental_config),
+            AdGroupByDistrict(**incremental_config),
+            AdGroupByMetro(**incremental_config),
+            AdGroupByMostSpecificLocation(**incremental_config),
+            AdGroupByPostalCode(**incremental_config),
+            AdGroupByProvince(**incremental_config),
+            AdGroupByRegion(**incremental_config),
+            AdGroupByState(**incremental_config),
+            AdGroupAdByCity(**incremental_config),
+            AdGroupAdByDistrict(**incremental_config),
+            AdGroupAdByMetro(**incremental_config),
+            AdGroupAdByMostSpecificLocation(**incremental_config),
+            AdGroupAdByPostalCode(**incremental_config),
+            AdGroupAdByProvince(**incremental_config),
+            AdGroupAdByRegion(**incremental_config),
+            AdGroupAdByState(**incremental_config)
+
         ]
         # Metrics streams cannot be requested for a manager account.
         if non_manager_accounts:
@@ -301,6 +337,31 @@ class SourceGoogleAds(AbstractSource):
                     KeywordViewByDayOfWeek(**non_manager_incremental_config),
                     CampaignByMonth(**non_manager_incremental_config),
                     KeywordViewByMonth(**non_manager_incremental_config),
+                    CampaignByMonthOfYear(**non_manager_incremental_config),
+                    KeywordViewByMonthOfYear(**non_manager_incremental_config),
+                    CampaignByQuarter(**non_manager_incremental_config),
+                    KeywordViewByQuarter(**non_manager_incremental_config),
+                    CampaignByWeek(**non_manager_incremental_config),
+                    KeywordViewByWeek(**non_manager_incremental_config),
+                    CampaignByYear(**non_manager_incremental_config),
+                    KeywordViewByYear(**non_manager_incremental_config),
+                    CampaignByYear(**non_manager_incremental_config),
+                    CampaignByCity(**non_manager_incremental_config),
+                    CampaignByDistrict(**non_manager_incremental_config),
+                    CampaignByMetro(**non_manager_incremental_config),
+                    CampaignByMostSpecificLocation(**non_manager_incremental_config),
+                    CampaignByPostalCode(**non_manager_incremental_config),
+                    CampaignByProvince(**non_manager_incremental_config),
+                    CampaignByRegion(**non_manager_incremental_config),
+                    CampaignByState(**non_manager_incremental_config),
+                    KeywordViewByCity(**non_manager_incremental_config),
+                    KeywordViewByDistrict(**non_manager_incremental_config),
+                    KeywordViewByMetro(**non_manager_incremental_config),
+                    KeywordViewByMostSpecificLocation(**non_manager_incremental_config),
+                    KeywordViewByPostalCode(**non_manager_incremental_config),
+                    KeywordViewByProvince(**non_manager_incremental_config),
+                    KeywordViewByRegion(**non_manager_incremental_config),
+                    KeywordViewByState(**non_manager_incremental_config)
 
                 ]
             )

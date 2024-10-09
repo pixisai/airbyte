@@ -40,17 +40,66 @@ REPORT_MAPPING = {
     "campaign_real_time_bidding_settings": "campaign",
     "campaign_bidding_strategy": "campaign",
     "service_accounts": "customer",
-    "campaign_by_date":"campaign",
-    "campaign_by_date_hour":"campaign",
-    "ad_group_by_date_hour":"ad_group",
-    "campaign_by_day_of_week":"campaign",
-    "ad_group_by_day_of_week":"ad_group",
-    "ad_group_ad_by_day_of_week":"ad_group_ad",
-    "keyword_view_by_day_of_week":"keyword_view",
-    "campaign_by_month":"campaign",
-    "ad_group_by_month":"ad_group",
-    "ad_group_ad_by_month":"ad_group_ad",
-    "keyword_view_by_month":"keyword_view"
+    "campaign_by_date": "campaign",
+    "campaign_by_date_hour": "campaign",
+    "ad_group_by_date_hour": "ad_group",
+    "campaign_by_day_of_week": "campaign",
+    "ad_group_by_day_of_week": "ad_group",
+    "ad_group_ad_by_day_of_week": "ad_group_ad",
+    "keyword_view_by_day_of_week": "keyword_view",
+    "campaign_by_month": "campaign",
+    "ad_group_by_month": "ad_group",
+    "ad_group_ad_by_month": "ad_group_ad",
+    "keyword_view_by_month": "keyword_view",
+    "campaign_by_month_of_year": "campaign",
+    "ad_group_by_month_of_year": "ad_group",
+    "ad_group_ad_by_month_of_year": "ad_group_ad",
+    "keyword_view_by_month_of_year": "keyword_view",
+    "campaign_by_quarter": "campaign",
+    "ad_group_by_quarter": "ad_group",
+    "ad_group_ad_by_quarter": "ad_group_ad",
+    "keyword_view_by_quarter": "keyword_view",
+    "campaign_by_week": "campaign",
+    "ad_group_by_week": "ad_group",
+    "ad_group_ad_by_week": "ad_group_ad",
+    "keyword_view_by_week": "keyword_view",
+    "campaign_by_year": "campaign",
+    "ad_group_by_year": "ad_group",
+    "ad_group_ad_by_year": "ad_group_ad",
+    "keyword_view_by_year": "keyword_view",
+"campaign_by_year": "campaign",
+    "campaign_by_city": "campaign",
+    "campaign_by_district": "campaign",
+    "campaign_by_metro": "campaign",
+    "campaign_by_most_specific_location": "campaign",
+    "campaign_by_postal_code": "campaign",
+    "campaign_by_province": "campaign",
+    "campaign_by_region": "campaign",
+    "campaign_by_state": "campaign",
+    "ad_group_by_city": "ad_group",
+    "ad_group_by_district": "ad_group",
+    "ad_group_by_metro": "ad_group",
+    "ad_group_by_most_specific_location": "ad_group",
+    "ad_group_by_postal_code": "ad_group",
+    "ad_group_by_province": "ad_group",
+    "ad_group_by_region": "ad_group",
+    "ad_group_by_state": "ad_group",
+    "ad_group_ad_by_city": "ad_group_ad",
+    "ad_group_ad_by_district": "ad_group_ad",
+    "ad_group_ad_by_metro": "ad_group_ad",
+    "ad_group_ad_by_most_specific_location": "ad_group_ad",
+    "ad_group_ad_by_postal_code": "ad_group_ad",
+    "ad_group_ad_by_province": "ad_group_ad",
+    "ad_group_ad_by_region": "ad_group_ad",
+    "ad_group_ad_by_state": "ad_group_ad",
+    "keyword_view_by_city": "keyword_view",
+    "keyword_view_by_district": "keyword_view",
+    "keyword_view_by_metro": "keyword_view",
+    "keyword_view_by_most_specific_location": "keyword_view",
+    "keyword_view_by_postal_code": "keyword_view",
+    "keyword_view_by_province": "keyword_view",
+    "keyword_view_by_region": "keyword_view",
+    "keyword_view_by_state": "keyword_view"
 
 }
 
@@ -70,10 +119,10 @@ def is_error_type(error_value, target_enum_value):
 
 
 def traced_exception(
-    ga_exception: Union[GoogleAdsException, Unauthenticated],
-    customer_id: str,
-    catch_disabled_customer_error: bool,
-    query_name: Optional[str] = None,
+        ga_exception: Union[GoogleAdsException, Unauthenticated],
+        customer_id: str,
+        catch_disabled_customer_error: bool,
+        query_name: Optional[str] = None,
 ) -> None:
     """Add user-friendly message for GoogleAdsException"""
     messages = []
@@ -96,7 +145,7 @@ def traced_exception(
         request_error = error.error_code.request_error
 
         if is_error_type(authorization_error, AuthorizationErrorEnum.AuthorizationError.USER_PERMISSION_DENIED) or is_error_type(
-            authentication_error, AuthenticationErrorEnum.AuthenticationError.CUSTOMER_NOT_FOUND
+                authentication_error, AuthenticationErrorEnum.AuthenticationError.CUSTOMER_NOT_FOUND
         ):
             message = (
                 f"Failed to access the customer '{customer_id}'. "
@@ -162,12 +211,12 @@ def traced_exception(
 
 
 def generator_backoff(
-    wait_gen: Callable,
-    exception: Union[Type[Exception], tuple],
-    max_tries: Optional[int] = None,
-    max_time: Optional[float] = None,
-    on_backoff: Optional[Callable] = None,
-    **wait_gen_kwargs: Any,
+        wait_gen: Callable,
+        exception: Union[Type[Exception], tuple],
+        max_tries: Optional[int] = None,
+        max_time: Optional[float] = None,
+        on_backoff: Optional[Callable] = None,
+        **wait_gen_kwargs: Any,
 ):
     def decorator(func: Callable) -> Callable:
         def wrapper(*args, **kwargs) -> Generator:
@@ -344,14 +393,14 @@ def parse_dates(stream_slice):
 
 
 def chunk_date_range(
-    start_date: str,
-    end_date: str = None,
-    conversion_window: int = 0,
-    days_of_data_storage: int = None,
-    time_zone=None,
-    time_format="YYYY-MM-DD",
-    slice_duration: pendulum.Duration = pendulum.duration(days=14),
-    slice_step: pendulum.Duration = pendulum.duration(days=1),
+        start_date: str,
+        end_date: str = None,
+        conversion_window: int = 0,
+        days_of_data_storage: int = None,
+        time_zone=None,
+        time_format="YYYY-MM-DD",
+        slice_duration: pendulum.Duration = pendulum.duration(days=14),
+        slice_step: pendulum.Duration = pendulum.duration(days=1),
 ) -> Iterable[Optional[MutableMapping[str, any]]]:
     """
     Splits a date range into smaller chunks based on the provided parameters.

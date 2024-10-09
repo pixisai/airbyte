@@ -69,6 +69,54 @@ data:
       - ad_group_by_month
       - ad_group_ad_by_month
       - keyword_view_by_month
+      - campaign_by_month_of_year
+      - ad_group_by_month_of_year
+      - ad_group_ad_by_month_of_year
+      - keyword_view_by_month_of_year
+      - campaign_by_quarter
+      - ad_group_by_quarter
+      - ad_group_ad_by_quarter
+      - keyword_view_by_quarter
+      - campaign_by_week
+      - ad_group_by_week
+      - ad_group_ad_by_week
+      - keyword_view_by_week
+      - campaign_by_year
+      - ad_group_by_year
+      - ad_group_ad_by_year
+      - keyword_view_by_year
+      - campaign_by_city
+      - campaign_by_district
+      - campaign_by_metro
+      - campaign_by_most_specific_location
+      - campaign_by_postal_code
+      - campaign_by_province
+      - campaign_by_region
+      - campaign_by_state
+      - ad_group_by_city
+      - ad_group_by_district
+      - ad_group_by_metro
+      - ad_group_by_most_specific_location
+      - ad_group_by_postal_code
+      - ad_group_by_province
+      - ad_group_by_region
+      - ad_group_by_state
+      - ad_group_ad_by_city
+      - ad_group_ad_by_district
+      - ad_group_ad_by_metro
+      - ad_group_ad_by_most_specific_location
+      - ad_group_ad_by_postal_code
+      - ad_group_ad_by_province
+      - ad_group_ad_by_region
+      - ad_group_ad_by_state
+      - keyword_view_by_city
+      - keyword_view_by_district
+      - keyword_view_by_metro
+      - keyword_view_by_most_specific_location
+      - keyword_view_by_postal_code
+      - keyword_view_by_province
+      - keyword_view_by_region
+      - keyword_view_by_state
   supportLevel: certified
   tags:
     - language:python

@@ -952,3 +952,355 @@ class KeywordViewByMonth(KeywordView):
     """
 
     primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.month"]
+
+
+class CampaignByMonthOfYear(Campaign):
+    """
+    Campaign By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.month_of_year"]
+
+
+class AdGroupByMonthOfYear(AdGroup):
+    """
+    Ad Group By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.month_of_year"]
+
+
+class AdGroupAdByMonthOfYear(AdGroupAd):
+    """
+    Ad Group Ad By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date","segments.month_of_year"]
+
+
+class KeywordViewByMonthOfYear(KeywordView):
+    """
+    Keyword View By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.month_of_year"]
+
+
+class CampaignByQuarter(Campaign):
+    """
+    Campaign By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.quarter"]
+
+
+class AdGroupByQuarter(AdGroup):
+    """
+    Ad Group By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.quarter"]
+
+
+class AdGroupAdByQuarter(AdGroupAd):
+    """
+    Ad Group Ad By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date","segments.quarter"]
+
+
+class KeywordViewByQuarter(KeywordView):
+    """
+    Keyword View By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.quarter"]
+
+
+class CampaignByWeek(Campaign):
+    """
+    Campaign By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.week"]
+
+
+class AdGroupByWeek(AdGroup):
+    """
+    Ad Group By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.week"]
+
+
+class AdGroupAdByWeek(AdGroupAd):
+    """
+    Ad Group Ad By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.week"]
+
+
+class KeywordViewByWeek(KeywordView):
+    """
+    Keyword View By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.week"]
+
+
+class CampaignByYear(Campaign):
+    """
+    Campaign By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.year"]
+
+
+class AdGroupByYear(AdGroup):
+    """
+    Ad Group By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.year"]
+
+
+class AdGroupAdByYear(AdGroupAd):
+    """
+    Ad Group Ad By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.year"]
+
+
+class KeywordViewByYear(KeywordView):
+    """
+    Keyword View By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.year"]
+
+
+class CampaignByCity(Campaign):
+    """
+    Campaign By City stream.
+    """
+    primary_key = ["campaign.id", "segments.date", "segments.geo_target_city"]
+
+
+class CampaignByDistrict(Campaign):
+    """
+    Campaign By District stream.
+    """
+    primary_key = ["campaign.id", "segments.date", "segments.geo_target_district"]
+
+
+class CampaignByMetro(Campaign):
+    """
+    Campaign By Metro stream.
+    """
+    primary_key = ["campaign.id", "segments.date", "segments.geo_target_metro"]
+
+
+class CampaignByMostSpecificLocation(Campaign):
+    """
+    Campaign By Most Specific Location stream.
+    """
+    primary_key = ["campaign.id", "segments.date", "segments.geo_target_most_specific_location"]
+
+
+class CampaignByPostalCode(Campaign):
+    """
+    Campaign By Postal Code stream.
+    """
+    primary_key = ["campaign.id", "segments.date", "segments.geo_target_postal_code"]
+
+
+class CampaignByProvince(Campaign):
+    """
+    Campaign By Province stream.
+    """
+    primary_key = ["campaign.id", "segments.date", "segments.geo_target_province"]
+
+
+class CampaignByRegion(Campaign):
+    """
+    Campaign By Region stream.
+    """
+    primary_key = ["campaign.id", "segments.date", "segments.geo_target_region"]
+
+
+class CampaignByState(Campaign):
+    """
+    Campaign By State stream.
+    """
+    primary_key = ["campaign.id", "segments.date", "segments.geo_target_state"]
+
+
+class AdGroupByCity(AdGroup):
+    """
+    Ad Group By City stream.
+    """
+    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_city"]
+
+
+class AdGroupByDistrict(AdGroup):
+    """
+    Ad Group By District stream.
+    """
+    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_district"]
+
+
+class AdGroupByMetro(AdGroup):
+    """
+    Ad Group By Metro stream.
+    """
+    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_metro"]
+
+
+class AdGroupByMostSpecificLocation(AdGroup):
+    """
+    Ad Group By Most Specific Location stream.
+    """
+    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_most_specific_location"]
+
+
+class AdGroupByPostalCode(AdGroup):
+    """
+    Ad Group By Postal Code stream.
+    """
+    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_postal_code"]
+
+
+class AdGroupByProvince(AdGroup):
+    """
+    Ad Group By Province stream.
+    """
+    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_province"]
+
+
+class AdGroupByRegion(AdGroup):
+    """
+    Ad Group By Region stream.
+    """
+    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_region"]
+
+
+class AdGroupByState(AdGroup):
+    """
+    Ad Group By State stream.
+    """
+    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_state"]
+
+
+class AdGroupAdByCity(AdGroupAd):
+    """
+    Ad Group Ad By City stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.geo_target_city"]
+
+
+class AdGroupAdByDistrict(AdGroupAd):
+    """
+    Ad Group Ad By District stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.geo_target_district"]
+
+
+class AdGroupAdByMetro(AdGroupAd):
+    """
+    Ad Group Ad By Metro stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.geo_target_metro"]
+
+
+class AdGroupAdByMostSpecificLocation(AdGroupAd):
+    """
+    Ad Group Ad By Most Specific Location stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.geo_target_most_specific_location"]
+
+
+class AdGroupAdByPostalCode(AdGroupAd):
+    """
+    Ad Group Ad By Postal Code stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.geo_target_postal_code"]
+
+
+class AdGroupAdByProvince(AdGroupAd):
+    """
+    Ad Group Ad By Province stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.geo_target_province"]
+
+
+class AdGroupAdByRegion(AdGroupAd):
+    """
+    Ad Group Ad By Region stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.geo_target_region"]
+
+
+class AdGroupAdByState(AdGroupAd):
+    """
+    Ad Group Ad By State stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.geo_target_state"]
+
+
+class KeywordViewByCity(KeywordView):
+    """
+    Keyword View By City stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.geo_target_city"]
+
+
+class KeywordViewByDistrict(KeywordView):
+    """
+    Keyword View By District stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.geo_target_district"]
+
+
+class KeywordViewByMetro(KeywordView):
+    """
+    Keyword View By Metro stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.geo_target_metro"]
+
+
+class KeywordViewByMostSpecificLocation(KeywordView):
+    """
+    Keyword View By Most Specific Location stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.geo_target_most_specific_location"]
+
+
+class KeywordViewByPostalCode(KeywordView):
+    """
+    Keyword View By Postal Code stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.geo_target_postal_code"]
+
+
+class KeywordViewByProvince(KeywordView):
+    """
+    Keyword View By Province stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.geo_target_province"]
+
+
+class KeywordViewByRegion(KeywordView):
+    """
+    Keyword View By Region stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.geo_target_region"]
+
+
+class KeywordViewByState(KeywordView):
+    """
+    Keyword View By State stream.
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.geo_target_state"]
