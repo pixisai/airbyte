@@ -869,14 +869,14 @@ class CampaignCriterion(IncrementalEventsStream):
 
 class CampaignByDate(Campaign):
     """
-    Campaign by Date stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    Campaign By Date stream: https://developers.google.com/google-ads/api/fields/v17/campaign
     """
     primary_key = ["campaign.id", "segments.date"]
 
 
 class CampaignByDateHour(Campaign):
     """
-    Campaign by Date and Hour stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    Campaign By Date And Hour stream: https://developers.google.com/google-ads/api/fields/v17/campaign
     """
 
     primary_key = ["campaign.id", "segments.date","segments.hour"]
@@ -884,7 +884,7 @@ class CampaignByDateHour(Campaign):
 
 class AdGroupByDateHour(AdGroup):
     """
-    Ad Group by Date and Hour stream : https://developers.google.com/google-ads/api/fields/v17/ad_group
+    Ad Group By Date And Hour stream : https://developers.google.com/google-ads/api/fields/v17/ad_group
     """
 
     primary_key = ["ad_group.id", "segments.date", "segments.hour"]
@@ -892,7 +892,7 @@ class AdGroupByDateHour(AdGroup):
 
 class CampaignByDayOfWeek(Campaign):
     """
-    Campaign by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    Campaign By Day Of Week stream: https://developers.google.com/google-ads/api/fields/v17/campaign
     """
 
     primary_key = ["campaign.id", "segments.date", "segments.day_of_week"]
@@ -900,7 +900,7 @@ class CampaignByDayOfWeek(Campaign):
 
 class AdGroupByDayOfWeek(AdGroup):
     """
-    Ad Group by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    Ad Group By Day Of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
     """
 
     primary_key = ["ad_group.id", "segments.date", "segments.day_of_week"]
@@ -908,7 +908,7 @@ class AdGroupByDayOfWeek(AdGroup):
 
 class AdGroupAdByDayOfWeek(AdGroupAd):
     """
-    Ad Group Ad by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    Ad Group Ad By Day Of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
     """
 
     primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date","segments.day_of_week"]
@@ -916,7 +916,7 @@ class AdGroupAdByDayOfWeek(AdGroupAd):
 
 class KeywordViewByDayOfWeek(KeywordView):
     """
-    Keyword View by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    Keyword View By Day Of Week stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
     """
 
     primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.day_of_week"]
@@ -924,7 +924,7 @@ class KeywordViewByDayOfWeek(KeywordView):
 
 class CampaignByMonth(Campaign):
     """
-    Campaign by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    Campaign By Month stream: https://developers.google.com/google-ads/api/fields/v17/campaign
     """
 
     primary_key = ["campaign.id", "segments.date", "segments.month"]
@@ -932,7 +932,7 @@ class CampaignByMonth(Campaign):
 
 class AdGroupByMonth(AdGroup):
     """
-    Ad Group by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    Ad Group By Month stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
     """
 
     primary_key = ["ad_group.id", "segments.date", "segments.month"]
@@ -940,7 +940,7 @@ class AdGroupByMonth(AdGroup):
 
 class AdGroupAdByMonth(AdGroupAd):
     """
-    Ad Group Ad by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    Ad Group Ad By Month stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
     """
 
     primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date","segments.month"]
@@ -948,7 +948,7 @@ class AdGroupAdByMonth(AdGroupAd):
 
 class KeywordViewByMonth(KeywordView):
     """
-    Keyword View by Day of Week stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    Keyword View By Month stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
     """
 
     primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.month"]
