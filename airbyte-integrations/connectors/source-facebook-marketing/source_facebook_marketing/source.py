@@ -43,6 +43,10 @@ from source_facebook_marketing.streams import (
     AdsInsightsDemographicsCountry,
     AdsInsightsDemographicsDMARegion,
     AdsInsightsDemographicsGender,
+    AdsInsightsHourlyStatsAggregatedByAdvertiserTimeZone,
+    AdsInsightsHourlyStatsAggregatedByAudienceTimeZone,
+    AdsInsightsPlatformPosition,
+    AdsInsightsImpressionDevice,
     AdsInsightsDma,
     AdsInsightsPlatformAndDevice,
     AdsInsightsRegion,
@@ -148,6 +152,8 @@ class SourceFacebookMarketing(AbstractSource):
             insights_lookback_window=config.insights_lookback_window,
             insights_job_timeout=config.insights_job_timeout,
             filter_statuses=[status.value for status in [*ValidAdStatuses]],
+            action_breakdowns_allow_empty=config.action_breakdowns_allow_empty,
+            action_breakdowns=config.action_breakdowns
         )
         streams = [
             AdAccount(api=api, account_ids=config.account_ids),
@@ -193,6 +199,10 @@ class SourceFacebookMarketing(AbstractSource):
             AdsInsightsDemographicsCountry(page_size=config.page_size, **insights_args),
             AdsInsightsDemographicsDMARegion(page_size=config.page_size, **insights_args),
             AdsInsightsDemographicsGender(page_size=config.page_size, **insights_args),
+            AdsInsightsHourlyStatsAggregatedByAdvertiserTimeZone(page_size=config.page_size, **insights_args),
+            AdsInsightsHourlyStatsAggregatedByAudienceTimeZone(page_size=config.page_size, **insights_args),
+            AdsInsightsPlatformPosition(page_size=config.page_size, **insights_args),
+            AdsInsightsImpressionDevice(page_size=config.page_size, **insights_args),
             Campaigns(
                 api=api,
                 account_ids=config.account_ids,
