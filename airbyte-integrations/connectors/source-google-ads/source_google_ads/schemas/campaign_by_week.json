@@ -470,14 +470,6 @@
       "description": "Search click share metric for the campaign.",
       "type": ["null", "number"]
     },
-    "metrics.unique_users": {
-      "description": "Unique users metric for the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.average_impression_frequency_per_user": {
-      "description": "Average impression frequency per user metric for the campaign.",
-      "type": ["null", "number"]
-    },
     "metrics.revenue_micros": {
       "description": "Total revenue in micros for the campaign.",
       "type": ["null", "integer"]

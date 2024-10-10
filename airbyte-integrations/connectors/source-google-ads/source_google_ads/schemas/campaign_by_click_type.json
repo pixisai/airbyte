@@ -338,14 +338,6 @@
       "description": "Total number of impressions for the campaign.",
       "type": ["null", "integer"]
     },
-    "metrics.video_views": {
-      "description": "Total number of video views in the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.video_quartile_p100_rate": {
-      "description": "Rate of viewers reaching the 100% quartile in video ads.",
-      "type": ["null", "number"]
-    },
     "metrics.active_view_cpm": {
       "description": "Active View CPM metric for the campaign.",
       "type": ["null", "number"]
@@ -410,10 +402,6 @@
       "type": ["null", "string"],
       "format": "date"
     },
-    "metrics.average_cpv": {
-      "description": "Average CPV metric for the campaign.",
-      "type": ["null", "number"]
-    },
     "metrics.phone_calls": {
       "description": "Total number of phone calls in the campaign.",
       "type": ["null", "integer"]
@@ -434,10 +422,6 @@
       "description": "Conversion date metric for all conversions in the campaign.",
       "type": ["null","number"]
     },
-    "metrics.search_absolute_top_impression_share": {
-      "description": "Search absolute top impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
     "metrics.invalid_click_rate": {
       "description": "Invalid click rate metric for the campaign.",
       "type": ["null", "number"]
@@ -449,34 +433,6 @@
     "metrics.value_per_conversions_by_conversion_date": {
       "description": "Conversion date metric for value per conversion in the campaign.",
       "type": ["null","number"]
-    },
-    "metrics.search_top_impression_share": {
-      "description": "Search top impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_rank_lost_absolute_top_impression_share": {
-      "description": "Search rank lost absolute top impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_budget_lost_absolute_top_impression_share": {
-      "description": "Search budget lost absolute top impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_budget_lost_top_impression_share": {
-      "description": "Search budget lost top impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_click_share": {
-      "description": "Search click share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.unique_users": {
-      "description": "Unique users metric for the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.average_impression_frequency_per_user": {
-      "description": "Average impression frequency per user metric for the campaign.",
-      "type": ["null", "number"]
     },
     "metrics.revenue_micros": {
       "description": "Total revenue in micros for the campaign.",
@@ -494,14 +450,6 @@
       "description": "Cost per conversion for all campaigns.",
       "type": ["null", "number"]
     },
-    "metrics.engagement_rate": {
-      "description": "Engagement rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.engagements": {
-      "description": "Total number of engagements in the campaign.",
-      "type": ["null", "integer"]
-    },
     "metrics.gmail_forwards": {
       "description": "Total number of Gmail forwards in the campaign.",
       "type": ["null", "integer"]
@@ -514,41 +462,9 @@
       "description": "Interaction rate metric for the campaign.",
       "type": ["null", "number"]
     },
-    "metrics.video_quartile_p25_rate": {
-      "description": "Video quartile 25 rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.video_quartile_p50_rate": {
-      "description": "Video quartile 50 rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.video_quartile_p75_rate": {
-      "description": "Video quartile 75 rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_impression_share": {
-      "description": "Search impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.view_through_conversions": {
-      "description": "Total number of view-through conversions in the campaign.",
-      "type": ["null", "integer"]
-    },
     "metrics.conversions_value_by_conversion_date": {
       "description": "Conversion date metric for value per conversion in all campaigns.",
       "type": ["null","number"]
-    },
-    "metrics.search_rank_lost_impression_share": {
-      "description": "Search rank lost impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_budget_lost_impression_share": {
-      "description": "Search budget lost impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_exact_match_impression_share": {
-      "description": "Search exact match impression share metric for the campaign.",
-      "type": ["null", "number"]
     },
     "segments.click_type": {
       "description": "Click type segment used for campaign data.",
