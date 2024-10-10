@@ -121,7 +121,7 @@ REPORT_MAPPING = {
     "ad_group_ad_by_conversion_source": "ad_group_ad",
     "ad_group_ad_by_conversion_action_name": "ad_group_ad",
     "ad_group_ad_by_ad_network_type": "ad_group_ad",
-    "ad_group_ad_by_search_term": "ad_group_ad",
+
     "keyword_view_by_device": "keyword_view",
     "keyword_view_by_click_type": "keyword_view",
     "keyword_view_by_conversion_source": "keyword_view",
