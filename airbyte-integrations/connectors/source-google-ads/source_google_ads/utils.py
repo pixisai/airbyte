@@ -83,8 +83,8 @@ REPORT_MAPPING = {
     "ad_group_by_province": "ad_group",
     "ad_group_by_region": "ad_group",
     "ad_group_by_state": "ad_group",
-    "campaign_by_keyword_match_type": "campaign",
-    "campaign_by_keyword_text": "campaign",
+
+
     "campaign_by_search_term_match_type": "campaign",
     "campaign_by_device": "campaign",
     "campaign_by_click_type": "campaign",

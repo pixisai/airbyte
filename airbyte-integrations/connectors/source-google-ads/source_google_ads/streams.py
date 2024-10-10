@@ -1082,116 +1082,116 @@ class KeywordViewByYear(KeywordView):
     primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.year"]
 
 
-class CampaignByCity(Campaign):
-    """
-    Campaign By City stream.
-    """
-    primary_key = ["campaign.id", "segments.date", "segments.geo_target_city"]
+# class CampaignByCity(Campaign):
+#     """
+#     Campaign By City stream.
+#     """
+#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_city"]
 
 
-class CampaignByDistrict(Campaign):
-    """
-    Campaign By District stream.
-    """
-    primary_key = ["campaign.id", "segments.date", "segments.geo_target_district"]
+# class CampaignByDistrict(Campaign):
+#     """
+#     Campaign By District stream.
+#     """
+#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_district"]
 
 
-class CampaignByMetro(Campaign):
-    """
-    Campaign By Metro stream.
-    """
-    primary_key = ["campaign.id", "segments.date", "segments.geo_target_metro"]
+# class CampaignByMetro(Campaign):
+#     """
+#     Campaign By Metro stream.
+#     """
+#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_metro"]
 
 
-class CampaignByMostSpecificLocation(Campaign):
-    """
-    Campaign By Most Specific Location stream.
-    """
-    primary_key = ["campaign.id", "segments.date", "segments.geo_target_most_specific_location"]
+# class CampaignByMostSpecificLocation(Campaign):
+#     """
+#     Campaign By Most Specific Location stream.
+#     """
+#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_most_specific_location"]
 
 
-class CampaignByPostalCode(Campaign):
-    """
-    Campaign By Postal Code stream.
-    """
-    primary_key = ["campaign.id", "segments.date", "segments.geo_target_postal_code"]
+# class CampaignByPostalCode(Campaign):
+#     """
+#     Campaign By Postal Code stream.
+#     """
+#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_postal_code"]
 
 
-class CampaignByProvince(Campaign):
-    """
-    Campaign By Province stream.
-    """
-    primary_key = ["campaign.id", "segments.date", "segments.geo_target_province"]
+# class CampaignByProvince(Campaign):
+#     """
+#     Campaign By Province stream.
+#     """
+#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_province"]
 
 
-class CampaignByRegion(Campaign):
-    """
-    Campaign By Region stream.
-    """
-    primary_key = ["campaign.id", "segments.date", "segments.geo_target_region"]
+# class CampaignByRegion(Campaign):
+#     """
+#     Campaign By Region stream.
+#     """
+#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_region"]
 
 
-class CampaignByState(Campaign):
-    """
-    Campaign By State stream.
-    """
-    primary_key = ["campaign.id", "segments.date", "segments.geo_target_state"]
+# class CampaignByState(Campaign):
+#     """
+#     Campaign By State stream.
+#     """
+#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_state"]
 
 
-class AdGroupByCity(AdGroup):
-    """
-    Ad Group By City stream.
-    """
-    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_city"]
-
-
-class AdGroupByDistrict(AdGroup):
-    """
-    Ad Group By District stream.
-    """
-    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_district"]
-
-
-class AdGroupByMetro(AdGroup):
-    """
-    Ad Group By Metro stream.
-    """
-    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_metro"]
-
-
-class AdGroupByMostSpecificLocation(AdGroup):
-    """
-    Ad Group By Most Specific Location stream.
-    """
-    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_most_specific_location"]
-
-
-class AdGroupByPostalCode(AdGroup):
-    """
-    Ad Group By Postal Code stream.
-    """
-    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_postal_code"]
-
-
-class AdGroupByProvince(AdGroup):
-    """
-    Ad Group By Province stream.
-    """
-    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_province"]
-
-
-class AdGroupByRegion(AdGroup):
-    """
-    Ad Group By Region stream.
-    """
-    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_region"]
-
-
-class AdGroupByState(AdGroup):
-    """
-    Ad Group By State stream.
-    """
-    primary_key = ["ad_group.id", "segments.date", "segments.geo_target_state"]
+# class AdGroupByCity(AdGroup):
+#     """
+#     Ad Group By City stream.
+#     """
+#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_city"]
+#
+#
+# class AdGroupByDistrict(AdGroup):
+#     """
+#     Ad Group By District stream.
+#     """
+#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_district"]
+#
+#
+# class AdGroupByMetro(AdGroup):
+#     """
+#     Ad Group By Metro stream.
+#     """
+#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_metro"]
+#
+#
+# class AdGroupByMostSpecificLocation(AdGroup):
+#     """
+#     Ad Group By Most Specific Location stream.
+#     """
+#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_most_specific_location"]
+#
+#
+# class AdGroupByPostalCode(AdGroup):
+#     """
+#     Ad Group By Postal Code stream.
+#     """
+#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_postal_code"]
+#
+#
+# class AdGroupByProvince(AdGroup):
+#     """
+#     Ad Group By Province stream.
+#     """
+#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_province"]
+#
+#
+# class AdGroupByRegion(AdGroup):
+#     """
+#     Ad Group By Region stream.
+#     """
+#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_region"]
+#
+#
+# class AdGroupByState(AdGroup):
+#     """
+#     Ad Group By State stream.
+#     """
+#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_state"]
 
 
 class CampaignByDevice(Campaign):
@@ -1222,39 +1222,39 @@ class CampaignByConversionActionName(Campaign):
     primary_key = ["campaign.id", "segments.conversion_action_name", "segments.date"]
 
 
-class CampaignByCountry(Campaign):
-    """
-    Campaign By Country stream
-    """
-    primary_key = ["campaign.id", "segments.geo_target_country", "segments.date"]
+# class CampaignByCountry(Campaign):
+#     """
+#     Campaign By Country stream
+#     """
+#     primary_key = ["campaign.id", "segments.geo_target_country", "segments.date"]
 
 
-class CampaignByProductItemId(Campaign):
-    """
-    Campaign By Product Item ID stream
-    """
-    primary_key = ["campaign.id", "segments.product_item_id", "segments.date"]
+# class CampaignByProductItemId(Campaign):
+#     """
+#     Campaign By Product Item ID stream
+#     """
+#     primary_key = ["campaign.id", "segments.product_item_id", "segments.date"]
 
 
-class CampaignByProductMerchantId(Campaign):
-    """
-    Campaign By Product Merchant ID stream
-    """
-    primary_key = ["campaign.id", "segments.product_merchant_id", "segments.date"]
+# class CampaignByProductMerchantId(Campaign):
+#     """
+#     Campaign By Product Merchant ID stream
+#     """
+#     primary_key = ["campaign.id", "segments.product_merchant_id", "segments.date"]
 
 
-class CampaignByProductTitle(Campaign):
-    """
-    Campaign By Product Title stream
-    """
-    primary_key = ["campaign.id", "segments.product_title", "segments.date"]
+# class CampaignByProductTitle(Campaign):
+#     """
+#     Campaign By Product Title stream
+#     """
+#     primary_key = ["campaign.id", "segments.product_title", "segments.date"]
 
 
-class CampaignByProductTypeL1(Campaign):
-    """
-    Campaign By Product Type (1st Level) stream
-    """
-    primary_key = ["campaign.id", "segments.product_type_l1", "segments.date"]
+# class CampaignByProductTypeL1(Campaign):
+#     """
+#     Campaign By Product Type (1st Level) stream
+#     """
+#     primary_key = ["campaign.id", "segments.product_type_l1", "segments.date"]
 
 
 class CampaignByProductTypeL2(Campaign):
