@@ -434,7 +434,7 @@ class SourceGoogleAds(AbstractSource):
                     # CampaignByProductTitle(**incremental_config),
                     # CampaignByProductTypeL1(**incremental_config),
                     # CampaignByProductTypeL2(**incremental_config),
-                    CampaignByProductTypeL3(**incremental_config),
+                    # CampaignByProductTypeL3(**incremental_config),
                     CampaignByAdNetworkType(**incremental_config),
                     KeywordViewByDevice(**incremental_config),
                     KeywordViewByClickType(**incremental_config),
