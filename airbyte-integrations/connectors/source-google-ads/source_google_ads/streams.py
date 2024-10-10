@@ -1306,53 +1306,53 @@ class AdGroupByConversionActionName(AdGroup):
     primary_key = ["ad_group.id", "segments.conversion_action_name", "segments.date"]
 
 
-class AdGroupByCountry(AdGroup):
-    """
-    Ad Group By Country stream
-    """
-    primary_key = ["ad_group.id", "country", "segments.date"]
+# class AdGroupByCountry(AdGroup):
+#     """
+#     Ad Group By Country stream
+#     """
+#     primary_key = ["ad_group.id", "country", "segments.date"]
 
 
-class AdGroupByProductItemId(AdGroup):
-    """
-    Ad Group By Product Item ID stream
-    """
-    primary_key = ["ad_group.id", "segments.product_item_id", "segments.date"]
+# class AdGroupByProductItemId(AdGroup):
+#     """
+#     Ad Group By Product Item ID stream
+#     """
+#     primary_key = ["ad_group.id", "segments.product_item_id", "segments.date"]
 
 
-class AdGroupByProductMerchantId(AdGroup):
-    """
-    Ad Group By Product Merchant ID stream
-    """
-    primary_key = ["ad_group.id", "segments.product_merchant_id", "segments.date"]
+# class AdGroupByProductMerchantId(AdGroup):
+#     """
+#     Ad Group By Product Merchant ID stream
+#     """
+#     primary_key = ["ad_group.id", "segments.product_merchant_id", "segments.date"]
 
 
-class AdGroupByProductTitle(AdGroup):
-    """
-    Ad Group By Product Title stream
-    """
-    primary_key = ["ad_group.id", "segments.product_title", "segments.date"]
+# class AdGroupByProductTitle(AdGroup):
+#     """
+#     Ad Group By Product Title stream
+#     """
+#     primary_key = ["ad_group.id", "segments.product_title", "segments.date"]
 
 
-class AdGroupByProductTypeL1(AdGroup):
-    """
-    Ad Group By Product Type (1st Level) stream
-    """
-    primary_key = ["ad_group.id", "segments.product_type_l1", "segments.date"]
+# class AdGroupByProductTypeL1(AdGroup):
+#     """
+#     Ad Group By Product Type (1st Level) stream
+#     """
+#     primary_key = ["ad_group.id", "segments.product_type_l1", "segments.date"]
 
 
-class AdGroupByProductTypeL2(AdGroup):
-    """
-    Ad Group By Product Type (2nd Level) stream
-    """
-    primary_key = ["ad_group.id", "segments.product_type_l2", "segments.date"]
+# class AdGroupByProductTypeL2(AdGroup):
+#     """
+#     Ad Group By Product Type (2nd Level) stream
+#     """
+#     primary_key = ["ad_group.id", "segments.product_type_l2", "segments.date"]
 
 
-class AdGroupByProductTypeL3(AdGroup):
-    """
-    Ad Group By Product Type (3rd Level) stream
-    """
-    primary_key = ["ad_group.id", "segments.product_type_l3", "segments.date"]
+# class AdGroupByProductTypeL3(AdGroup):
+#     """
+#     Ad Group By Product Type (3rd Level) stream
+#     """
+#     primary_key = ["ad_group.id", "segments.product_type_l3", "segments.date"]
 
 
 class AdGroupByAdNetworkType(AdGroup):
@@ -1376,11 +1376,11 @@ class AdGroupAdByKeywordText(AdGroupAd):
     primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.keyword.info.text", "segments.date"]
 
 
-class AdGroupAdBySearchTermMatchType(AdGroupAd):
-    """
-    Ad Group Ad By Search Term Match Type stream
-    """
-    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.search_term_match_type", "segments.date"]
+# class AdGroupAdBySearchTermMatchType(AdGroupAd):
+#     """
+#     Ad Group Ad By Search Term Match Type stream
+#     """
+#     primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.search_term_match_type", "segments.date"]
 
 
 class AdGroupAdByDevice(AdGroupAd):
