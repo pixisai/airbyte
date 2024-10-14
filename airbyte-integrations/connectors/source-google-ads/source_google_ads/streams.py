@@ -1082,118 +1082,6 @@ class KeywordViewByYear(KeywordView):
     primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.year"]
 
 
-# class CampaignByCity(Campaign):
-#     """
-#     Campaign By City stream.
-#     """
-#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_city"]
-
-
-# class CampaignByDistrict(Campaign):
-#     """
-#     Campaign By District stream.
-#     """
-#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_district"]
-
-
-# class CampaignByMetro(Campaign):
-#     """
-#     Campaign By Metro stream.
-#     """
-#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_metro"]
-
-
-# class CampaignByMostSpecificLocation(Campaign):
-#     """
-#     Campaign By Most Specific Location stream.
-#     """
-#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_most_specific_location"]
-
-
-# class CampaignByPostalCode(Campaign):
-#     """
-#     Campaign By Postal Code stream.
-#     """
-#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_postal_code"]
-
-
-# class CampaignByProvince(Campaign):
-#     """
-#     Campaign By Province stream.
-#     """
-#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_province"]
-
-
-# class CampaignByRegion(Campaign):
-#     """
-#     Campaign By Region stream.
-#     """
-#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_region"]
-
-
-# class CampaignByState(Campaign):
-#     """
-#     Campaign By State stream.
-#     """
-#     primary_key = ["campaign.id", "segments.date", "segments.geo_target_state"]
-
-
-# class AdGroupByCity(AdGroup):
-#     """
-#     Ad Group By City stream.
-#     """
-#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_city"]
-#
-#
-# class AdGroupByDistrict(AdGroup):
-#     """
-#     Ad Group By District stream.
-#     """
-#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_district"]
-#
-#
-# class AdGroupByMetro(AdGroup):
-#     """
-#     Ad Group By Metro stream.
-#     """
-#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_metro"]
-#
-#
-# class AdGroupByMostSpecificLocation(AdGroup):
-#     """
-#     Ad Group By Most Specific Location stream.
-#     """
-#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_most_specific_location"]
-#
-#
-# class AdGroupByPostalCode(AdGroup):
-#     """
-#     Ad Group By Postal Code stream.
-#     """
-#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_postal_code"]
-#
-#
-# class AdGroupByProvince(AdGroup):
-#     """
-#     Ad Group By Province stream.
-#     """
-#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_province"]
-#
-#
-# class AdGroupByRegion(AdGroup):
-#     """
-#     Ad Group By Region stream.
-#     """
-#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_region"]
-#
-#
-# class AdGroupByState(AdGroup):
-#     """
-#     Ad Group By State stream.
-#     """
-#     primary_key = ["ad_group.id", "segments.date", "segments.geo_target_state"]
-
-
 class CampaignByDevice(Campaign):
     """
     Campaign By Device stream
@@ -1220,41 +1108,6 @@ class CampaignByConversionActionName(Campaign):
     Campaign By Conversion Action Name stream
     """
     primary_key = ["campaign.id", "segments.conversion_action_name", "segments.date"]
-
-
-# class CampaignByCountry(Campaign):
-#     """
-#     Campaign By Country stream
-#     """
-#     primary_key = ["campaign.id", "segments.geo_target_country", "segments.date"]
-
-
-# class CampaignByProductItemId(Campaign):
-#     """
-#     Campaign By Product Item ID stream
-#     """
-#     primary_key = ["campaign.id", "segments.product_item_id", "segments.date"]
-
-
-# class CampaignByProductMerchantId(Campaign):
-#     """
-#     Campaign By Product Merchant ID stream
-#     """
-#     primary_key = ["campaign.id", "segments.product_merchant_id", "segments.date"]
-
-
-# class CampaignByProductTitle(Campaign):
-#     """
-#     Campaign By Product Title stream
-#     """
-#     primary_key = ["campaign.id", "segments.product_title", "segments.date"]
-
-
-# class CampaignByProductTypeL1(Campaign):
-#     """
-#     Campaign By Product Type (1st Level) stream
-#     """
-#     primary_key = ["campaign.id", "segments.product_type_l1", "segments.date"]
 
 
 class CampaignByProductTypeL2(Campaign):
@@ -1306,55 +1159,6 @@ class AdGroupByConversionActionName(AdGroup):
     primary_key = ["ad_group.id", "segments.conversion_action_name", "segments.date"]
 
 
-# class AdGroupByCountry(AdGroup):
-#     """
-#     Ad Group By Country stream
-#     """
-#     primary_key = ["ad_group.id", "country", "segments.date"]
-
-
-# class AdGroupByProductItemId(AdGroup):
-#     """
-#     Ad Group By Product Item ID stream
-#     """
-#     primary_key = ["ad_group.id", "segments.product_item_id", "segments.date"]
-
-
-# class AdGroupByProductMerchantId(AdGroup):
-#     """
-#     Ad Group By Product Merchant ID stream
-#     """
-#     primary_key = ["ad_group.id", "segments.product_merchant_id", "segments.date"]
-
-
-# class AdGroupByProductTitle(AdGroup):
-#     """
-#     Ad Group By Product Title stream
-#     """
-#     primary_key = ["ad_group.id", "segments.product_title", "segments.date"]
-
-
-# class AdGroupByProductTypeL1(AdGroup):
-#     """
-#     Ad Group By Product Type (1st Level) stream
-#     """
-#     primary_key = ["ad_group.id", "segments.product_type_l1", "segments.date"]
-
-
-# class AdGroupByProductTypeL2(AdGroup):
-#     """
-#     Ad Group By Product Type (2nd Level) stream
-#     """
-#     primary_key = ["ad_group.id", "segments.product_type_l2", "segments.date"]
-
-
-# class AdGroupByProductTypeL3(AdGroup):
-#     """
-#     Ad Group By Product Type (3rd Level) stream
-#     """
-#     primary_key = ["ad_group.id", "segments.product_type_l3", "segments.date"]
-
-
 class AdGroupByAdNetworkType(AdGroup):
     """
     Ad Group By Ad Network Type stream
@@ -1374,13 +1178,6 @@ class AdGroupAdByKeywordText(AdGroupAd):
     Ad Group Ad By Keyword Text stream
     """
     primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.keyword.info.text", "segments.date"]
-
-
-# class AdGroupAdBySearchTermMatchType(AdGroupAd):
-#     """
-#     Ad Group Ad By Search Term Match Type stream
-#     """
-#     primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.search_term_match_type", "segments.date"]
 
 
 class AdGroupAdByDevice(AdGroupAd):
