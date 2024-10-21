@@ -56,11 +56,11 @@ class AdCreatives(FBMarketingStream):
         return self._fields
 
     def read_records(
-        self,
-        sync_mode: SyncMode,
-        cursor_field: List[str] = None,
-        stream_slice: Mapping[str, Any] = None,
-        stream_state: Mapping[str, Any] = None,
+            self,
+            sync_mode: SyncMode,
+            cursor_field: List[str] = None,
+            stream_slice: Mapping[str, Any] = None,
+            stream_state: Mapping[str, Any] = None,
     ) -> Iterable[Mapping[str, Any]]:
         """Read with super method and append thumbnail_data_url if enabled"""
         for record in super().read_records(sync_mode, cursor_field, stream_slice, stream_state):
@@ -158,7 +158,7 @@ class Activities(FBMarketingIncrementalStream):
             return {}
 
         potentially_new_records_in_the_past = self._filter_statuses and (
-            set(self._filter_statuses) - set(stream_state.get("filter_statuses", []))
+                set(self._filter_statuses) - set(stream_state.get("filter_statuses", []))
         )
         if potentially_new_records_in_the_past:
             self.logger.info(f"Ignoring bookmark for {self.name} because of enabled `filter_statuses` option")
@@ -346,29 +346,26 @@ class AdsInsightsDemographicsGender(AdsInsights):
     breakdowns = ["gender"]
     action_breakdowns = ["action_type"]
 
-class AdsInsightsGender(AdsInsights):
-    breakdowns = ["gender"]
-    action_breakdowns = []
-
-class AdsInsightsAge(AdsInsights):
-    breakdowns = ["age"]
-    action_breakdowns = []
 
 class AdsInsightsHourlyStatsAggregatedByAdvertiserTimeZone(AdsInsights):
     breakdowns = ["hourly_stats_aggregated_by_advertiser_time_zone"]
     action_breakdowns = []
 
+
 class AdsInsightsHourlyStatsAggregatedByAudienceTimeZone(AdsInsights):
     breakdowns = ["hourly_stats_aggregated_by_audience_time_zone"]
     action_breakdowns = []
+
 
 class AdsInsightsDevicePlatform(AdsInsights):
     breakdowns = ["device_platform"]
     action_breakdowns = []
 
+
 class AdsInsightsPlatformPosition(AdsInsights):
     breakdowns = ["platform_position"]
     action_breakdowns = []
+
 
 class AdsInsightsImpressionDevice(AdsInsights):
     breakdowns = ["impression_device"]
