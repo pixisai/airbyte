@@ -253,6 +253,11 @@
     "metrics.search_exact_match_impression_share": {
       "description": "Search exact match impression share metric for the campaign.",
       "type": ["null", "number"]
+    },
+    "segments.quarter": {
+      "description": "Quarter segment used for campaign data.",
+      "type": ["null", "string"],
+      "format": "date"
     }
   }
 }

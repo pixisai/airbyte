@@ -139,14 +139,6 @@
       "description": "Average CPV metric for the campaign.",
       "type": ["null", "number"]
     },
-    "metrics.phone_calls": {
-      "description": "Total number of phone calls in the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.phone_impressions": {
-      "description": "Total number of phone impressions in the campaign.",
-      "type": ["null", "integer"]
-    },
     "metrics.conversions_by_conversion_date": {
       "description": "Conversion date metric for the campaign.",
       "type": ["null","number"]
@@ -310,6 +302,10 @@
     "metrics.value_per_conversion": {
       "description": "Value per conversion metric for the campaign.",
       "type": ["null", "number"]
+    },
+    "segments.device": {
+      "description": "Device segment used for campaign data.",
+      "type": ["null", "string"]
     }
   }
 }

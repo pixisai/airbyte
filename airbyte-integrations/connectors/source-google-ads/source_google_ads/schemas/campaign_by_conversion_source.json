@@ -314,14 +314,6 @@
       "description": "The brand safety suitability settings for video ads within the campaign.",
       "type": ["null", "string"]
     },
-    "metrics.clicks": {
-      "description": "Total number of clicks in the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.ctr": {
-      "description": "Click-through rate (CTR) metric for the campaign.",
-      "type": ["null", "number"]
-    },
     "metrics.conversions": {
       "description": "Total number of conversions in the campaign.",
       "type": ["null", "number"]
@@ -330,101 +322,14 @@
       "description": "Total value of conversions in the campaign.",
       "type": ["null", "number"]
     },
-    "metrics.cost_micros": {
-      "description": "Total cost in micros incurred for the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.impressions": {
-      "description": "Total number of impressions for the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.video_views": {
-      "description": "Total number of video views in the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.video_quartile_p100_rate": {
-      "description": "Rate of viewers reaching the 100% quartile in video ads.",
-      "type": ["null", "number"]
-    },
-    "metrics.active_view_cpm": {
-      "description": "Active View CPM metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.active_view_ctr": {
-      "description": "Active View CTR metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.active_view_impressions": {
-      "description": "Number of active view impressions for the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.active_view_measurability": {
-      "description": "Active view measurability metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.active_view_measurable_cost_micros": {
-      "description": "Cost in micros for measurable active view impressions.",
-      "type": ["null", "integer"]
-    },
-    "metrics.active_view_measurable_impressions": {
-      "description": "Number of measurable active view impressions.",
-      "type": ["null", "integer"]
-    },
-    "metrics.active_view_viewability": {
-      "description": "Active view viewability metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.average_cost": {
-      "description": "Average cost metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.average_cpc": {
-      "description": "Average CPC metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.average_cpm": {
-      "description": "Average CPM metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.interactions": {
-      "description": "Total number of interactions in the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.interaction_event_types": {
-      "description": "Types of interaction events recorded in the campaign metrics.",
-      "type": ["null", "array"],
-      "items": {
-        "type": ["null", "string"]
-      }
-    },
     "metrics.value_per_conversion": {
       "description": "Average value per conversion in the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.cost_per_conversion": {
-      "description": "Cost per conversion metric for the campaign.",
       "type": ["null", "number"]
     },
     "segments.date": {
       "description": "Date segment used for campaign data.",
       "type": ["null", "string"],
       "format": "date"
-    },
-    "segments.hour": {
-      "description": "Hour segment used for campaign data.",
-      "type": ["null", "integer"]
-    },
-    "segments.ad_network_type": {
-      "description": "The type of ad network used for segmentation.",
-      "type": ["null", "string"]
-    },
-    "metrics.average_cpv": {
-      "description": "Average CPV metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.phone_calls": {
-      "description": "Total number of phone calls in the campaign.",
-      "type": ["null", "integer"]
     },
     "metrics.conversions_by_conversion_date": {
       "description": "Conversion date metric for the campaign.",
@@ -438,29 +343,13 @@
       "description": "Conversion date metric for all conversions in the campaign.",
       "type": ["null","number"]
     },
-    "metrics.search_absolute_top_impression_share": {
-      "description": "Search absolute top impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
     "metrics.value_per_conversions_by_conversion_date": {
       "description": "Conversion date metric for value per conversion in the campaign.",
       "type": ["null","number"]
     },
-    "metrics.search_top_impression_share": {
-      "description": "Search top impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_rank_lost_absolute_top_impression_share": {
-      "description": "Search rank lost absolute top impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_budget_lost_absolute_top_impression_share": {
-      "description": "Search budget lost absolute top impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_budget_lost_top_impression_share": {
-      "description": "Search budget lost top impression share metric for the campaign.",
-      "type": ["null", "number"]
+    "metrics.revenue_micros": {
+      "description": "Total revenue in micros for the campaign.",
+      "type": ["null", "integer"]
     },
     "metrics.all_conversions": {
       "description": "Total number of conversions for all campaigns.",
@@ -468,38 +357,6 @@
     },
     "metrics.all_conversions_value": {
       "description": "Total value of conversions for all campaigns.",
-      "type": ["null", "number"]
-    },
-    "metrics.cost_per_all_conversions": {
-      "description": "Cost per conversion for all campaigns.",
-      "type": ["null", "number"]
-    },
-    "metrics.engagement_rate": {
-      "description": "Engagement rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.engagements": {
-      "description": "Total number of engagements in the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.interaction_rate": {
-      "description": "Interaction rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.video_quartile_p25_rate": {
-      "description": "Video quartile 25 rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.video_quartile_p50_rate": {
-      "description": "Video quartile 50 rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.video_quartile_p75_rate": {
-      "description": "Video quartile 75 rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_impression_share": {
-      "description": "Search impression share metric for the campaign.",
       "type": ["null", "number"]
     },
     "metrics.view_through_conversions": {
@@ -510,13 +367,9 @@
       "description": "Conversion date metric for value per conversion in all campaigns.",
       "type": ["null","number"]
     },
-    "metrics.search_rank_lost_impression_share": {
-      "description": "Search rank lost impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_budget_lost_impression_share": {
-      "description": "Search budget lost impression share metric for the campaign.",
-      "type": ["null", "number"]
+    "segments.external_conversion_source": {
+      "description": "External conversion source segment.",
+      "type": ["null", "string"]
     }
   }
 }
