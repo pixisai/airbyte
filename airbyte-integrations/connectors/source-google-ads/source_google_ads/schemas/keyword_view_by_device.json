@@ -34,10 +34,6 @@
       "description": "The match type of the keyword (e.g., exact, broad, phrase).",
       "type": ["null", "string"]
     },
-    "metrics.historical_quality_score": {
-      "description": "The historical quality score of the keyword.",
-      "type": ["null", "integer"]
-    },
     "metrics.ctr": {
       "description": "The click-through rate (clicks divided by impressions) for the keyword.",
       "type": ["null", "number"]
@@ -126,10 +122,6 @@
     "metrics.conversions_value_per_cost": {
       "description": "The average value of conversions attributed to the keyword per cost.",
       "type": ["null", "number"]
-    },
-    "metrics.phone_calls": {
-      "description": "The number of phone calls made to the keyword.",
-      "type": ["null", "integer"]
     },
     "metrics.conversions_by_conversion_date": {
       "description": "Conversion date metric for the campaign.",
@@ -253,6 +245,10 @@
     "metrics.search_exact_match_impression_share": {
       "description": "Search exact match impression share metric for the campaign.",
       "type": ["null", "number"]
+    },
+    "segments.device": {
+      "description": "Device segment used for campaign data.",
+      "type": ["null", "string"]
     }
   }
 }

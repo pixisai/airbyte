@@ -310,6 +310,11 @@
     "metrics.value_per_conversion": {
       "description": "Value per conversion metric for the campaign.",
       "type": ["null", "number"]
+    },
+    "segments.week": {
+      "description": "The week segment for the ad group ad data.",
+      "type": ["null", "string"],
+      "format": "date"
     }
   }
 }

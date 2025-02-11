@@ -135,10 +135,6 @@
       "type": ["null", "string"],
       "format": "date"
     },
-    "metrics.average_cpv": {
-      "description": "Average CPV metric for the campaign.",
-      "type": ["null", "number"]
-    },
     "metrics.phone_calls": {
       "description": "Total number of phone calls in the campaign.",
       "type": ["null", "integer"]
@@ -147,28 +143,8 @@
       "description": "Total number of phone impressions in the campaign.",
       "type": ["null", "integer"]
     },
-    "metrics.conversions_by_conversion_date": {
-      "description": "Conversion date metric for the campaign.",
-      "type": ["null","number"]
-    },
-    "metrics.all_conversions_by_conversion_date": {
-      "description": "Conversion date metric for all conversions in the campaign.",
-      "type": ["null","number"]
-    },
-    "metrics.all_conversions_value_by_conversion_date": {
-      "description": "Conversion date metric for all conversions in the campaign.",
-      "type": ["null","number"]
-    },
     "metrics.search_absolute_top_impression_share": {
       "description": "Search absolute top impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.value_per_conversions_by_conversion_date": {
-      "description": "Conversion date metric for value per conversion in the campaign.",
-      "type": ["null","number"]
-    },
-    "metrics.search_top_impression_share": {
-      "description": "Search top impression share metric for the campaign.",
       "type": ["null", "number"]
     },
     "metrics.search_rank_lost_absolute_top_impression_share": {
@@ -179,25 +155,9 @@
       "description": "Search budget lost absolute top impression share metric for the campaign.",
       "type": ["null", "number"]
     },
-    "metrics.search_budget_lost_top_impression_share": {
-      "description": "Search budget lost top impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
     "metrics.revenue_micros": {
       "description": "Total revenue in micros for the campaign.",
       "type": ["null", "integer"]
-    },
-    "metrics.all_conversions": {
-      "description": "Total number of conversions for all campaigns.",
-      "type": ["null", "number"]
-    },
-    "metrics.all_conversions_value": {
-      "description": "Total value of conversions for all campaigns.",
-      "type": ["null", "number"]
-    },
-    "metrics.cost_per_all_conversions": {
-      "description": "Cost per conversion for all campaigns.",
-      "type": ["null", "number"]
     },
     "metrics.engagement_rate": {
       "description": "Engagement rate metric for the campaign.",
@@ -219,57 +179,9 @@
       "description": "Interaction rate metric for the campaign.",
       "type": ["null", "number"]
     },
-    "metrics.video_quartile_p25_rate": {
-      "description": "Video quartile 25 rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.video_quartile_p50_rate": {
-      "description": "Video quartile 50 rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.video_quartile_p75_rate": {
-      "description": "Video quartile 75 rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_impression_share": {
-      "description": "Search impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.view_through_conversions": {
-      "description": "Total number of view-through conversions in the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.conversions_value_by_conversion_date": {
-      "description": "Conversion date metric for value per conversion in all campaigns.",
-      "type": ["null","number"]
-    },
-    "metrics.search_rank_lost_impression_share": {
-      "description": "Search rank lost impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.search_exact_match_impression_share": {
-      "description": "Search exact match impression share metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.active_view_measurable_impressions": {
-      "description": "Active view measurable impressions metric for the campaign.",
-      "type": ["null", "integer"]
-    },
     "metrics.clicks": {
       "description": "Total number of clicks in the campaign.",
       "type": ["null", "integer"]
-    },
-    "metrics.conversions": {
-      "description": "Total number of conversions in the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.conversions_value": {
-      "description": "Total value of conversions in the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.cost_per_conversion": {
-      "description": "Cost per conversion for the campaign.",
-      "type": ["null", "number"]
     },
     "metrics.ctr": {
       "description": "Click-through rate metric for the campaign.",
@@ -283,22 +195,6 @@
       "description": "Total number of interactions in the campaign.",
       "type": ["null", "integer"]
     },
-    "metrics.video_quartile_p100_rate": {
-      "description": "Video quartile 100 rate metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.active_view_viewability": {
-      "description": "Active view viewability metric for the campaign.",
-      "type": ["null", "number"]
-    },
-    "metrics.video_views": {
-      "description": "Total number of video views in the campaign.",
-      "type": ["null", "integer"]
-    },
-    "metrics.active_view_impressions": {
-      "description": "Active view impressions metric for the campaign.",
-      "type": ["null", "integer"]
-    },
     "metrics.average_cpc": {
       "description": "Average Cost per Click metric for the campaign.",
       "type": ["null", "number"]
@@ -307,9 +203,9 @@
       "description": "Average cost of the campaign.",
       "type": ["null", "number"]
     },
-    "metrics.value_per_conversion": {
-      "description": "Value per conversion metric for the campaign.",
-      "type": ["null", "number"]
+    "segments.month_of_year": {
+      "description": "The month of year segment for the data.",
+      "type": ["null", "string"]
     }
   }
 }
