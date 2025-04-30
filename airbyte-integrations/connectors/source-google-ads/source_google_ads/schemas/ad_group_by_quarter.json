@@ -310,6 +310,11 @@
     "metrics.value_per_conversion": {
       "description": "Value per conversion metric for the campaign.",
       "type": ["null", "number"]
+    },
+    "segments.quarter": {
+      "description": "Quarter segment used for campaign data.",
+      "type": ["null", "string"],
+      "format": "date"
     }
   }
 }

@@ -807,6 +807,10 @@
     "metrics.value_per_conversion": {
       "description": "Average value per conversion in the campaign.",
       "type": ["null", "number"]
+    },
+    "segments.device": {
+      "description": "Device segment used for campaign data.",
+      "type": ["null", "string"]
     }
   }
 }

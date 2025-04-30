@@ -34,10 +34,6 @@
       "description": "The match type of the keyword (e.g., exact, broad, phrase).",
       "type": ["null", "string"]
     },
-    "metrics.historical_quality_score": {
-      "description": "The historical quality score of the keyword.",
-      "type": ["null", "integer"]
-    },
     "metrics.ctr": {
       "description": "The click-through rate (clicks divided by impressions) for the keyword.",
       "type": ["null", "number"]
@@ -253,6 +249,10 @@
     "metrics.search_exact_match_impression_share": {
       "description": "Search exact match impression share metric for the campaign.",
       "type": ["null", "number"]
+    },
+    "segments.ad_network_type": {
+      "description": "Ad network type segment used for campaign data.",
+      "type": ["null", "string"]
     }
   }
 }

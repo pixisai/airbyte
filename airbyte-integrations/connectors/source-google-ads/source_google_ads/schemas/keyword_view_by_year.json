@@ -253,6 +253,10 @@
     "metrics.search_exact_match_impression_share": {
       "description": "Search exact match impression share metric for the campaign.",
       "type": ["null", "number"]
+    },
+    "segments.year": {
+      "description": "The year of the segment.",
+      "type": ["null", "integer"]
     }
   }
 }
