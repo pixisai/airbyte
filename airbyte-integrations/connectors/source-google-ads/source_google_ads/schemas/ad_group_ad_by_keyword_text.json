@@ -688,10 +688,6 @@
       "description": "Conversion date metric for conversions in the campaign.",
       "type": ["null","number"]
     },
-    "metrics.revenue_micros": {
-      "description": "Total revenue in micros in the campaign.",
-      "type": ["null", "number"]
-    },
     "metrics.active_view_measurable_impressions": {
       "description": "Total active view measurable impressions in the campaign.",
       "type": ["null", "integer"]
@@ -807,6 +803,10 @@
     "metrics.value_per_conversion": {
       "description": "Average value per conversion in the campaign.",
       "type": ["null", "number"]
+    },
+    "segments.keyword.info.text": {
+      "description": "The text of the keyword segment.",
+      "type": ["null", "string"]
     }
   }
 }

@@ -865,3 +865,388 @@ class CampaignCriterion(IncrementalEventsStream):
     id_field = "campaign_criterion.resource_name"
     resource_type = "CAMPAIGN_CRITERION"
     cursor_field = "change_status.last_change_date_time"
+
+
+class CampaignByDate(Campaign):
+    """
+    Campaign By Date stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+    primary_key = ["campaign.id", "segments.date"]
+
+
+class CampaignByDateHour(Campaign):
+    """
+    Campaign By Date And Hour stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date","segments.hour"]
+
+
+class AdGroupByDateHour(AdGroup):
+    """
+    Ad Group By Date And Hour stream : https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.hour"]
+
+
+class CampaignByDayOfWeek(Campaign):
+    """
+    Campaign By Day Of Week stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.day_of_week"]
+
+
+class AdGroupByDayOfWeek(AdGroup):
+    """
+    Ad Group By Day Of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.day_of_week"]
+
+
+class AdGroupAdByDayOfWeek(AdGroupAd):
+    """
+    Ad Group Ad By Day Of Week stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date","segments.day_of_week"]
+
+
+class KeywordViewByDayOfWeek(KeywordView):
+    """
+    Keyword View By Day Of Week stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.day_of_week"]
+
+
+class CampaignByMonth(Campaign):
+    """
+    Campaign By Month stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.month"]
+
+
+class AdGroupByMonth(AdGroup):
+    """
+    Ad Group By Month stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.month"]
+
+
+class AdGroupAdByMonth(AdGroupAd):
+    """
+    Ad Group Ad By Month stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date","segments.month"]
+
+
+class KeywordViewByMonth(KeywordView):
+    """
+    Keyword View By Month stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.month"]
+
+
+class CampaignByMonthOfYear(Campaign):
+    """
+    Campaign By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.month_of_year"]
+
+
+class AdGroupByMonthOfYear(AdGroup):
+    """
+    Ad Group By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.month_of_year"]
+
+
+class AdGroupAdByMonthOfYear(AdGroupAd):
+    """
+    Ad Group Ad By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date","segments.month_of_year"]
+
+
+class KeywordViewByMonthOfYear(KeywordView):
+    """
+    Keyword View By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.month_of_year"]
+
+
+class CampaignByQuarter(Campaign):
+    """
+    Campaign By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.quarter"]
+
+
+class AdGroupByQuarter(AdGroup):
+    """
+    Ad Group By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.quarter"]
+
+
+class AdGroupAdByQuarter(AdGroupAd):
+    """
+    Ad Group Ad By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date","segments.quarter"]
+
+
+class KeywordViewByQuarter(KeywordView):
+    """
+    Keyword View By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.quarter"]
+
+
+class CampaignByWeek(Campaign):
+    """
+    Campaign By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.week"]
+
+
+class AdGroupByWeek(AdGroup):
+    """
+    Ad Group By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.week"]
+
+
+class AdGroupAdByWeek(AdGroupAd):
+    """
+    Ad Group Ad By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.week"]
+
+
+class KeywordViewByWeek(KeywordView):
+    """
+    Keyword View By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.week"]
+
+
+class CampaignByYear(Campaign):
+    """
+    Campaign By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/campaign
+    """
+
+    primary_key = ["campaign.id", "segments.date", "segments.year"]
+
+
+class AdGroupByYear(AdGroup):
+    """
+    Ad Group By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group
+    """
+
+    primary_key = ["ad_group.id", "segments.date", "segments.year"]
+
+
+class AdGroupAdByYear(AdGroupAd):
+    """
+    Ad Group Ad By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/ad_group_ad
+    """
+
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.date", "segments.year"]
+
+
+class KeywordViewByYear(KeywordView):
+    """
+    Keyword View By Month Of Year stream: https://developers.google.com/google-ads/api/fields/v17/keyword_view
+    """
+
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.year"]
+
+
+class CampaignByDevice(Campaign):
+    """
+    Campaign By Device stream
+    """
+    primary_key = ["campaign.id", "segments.device", "segments.date"]
+
+
+class CampaignByClickType(Campaign):
+    """
+    Campaign By Click Type stream
+    """
+    primary_key = ["campaign.id", "segments.click_type", "segments.date"]
+
+
+class CampaignByConversionSource(Campaign):
+    """
+    Campaign By Conversion Source stream
+    """
+    primary_key = ["campaign.id", "segments.external_conversion_source", "segments.date"]
+
+
+class CampaignByConversionActionName(Campaign):
+    """
+    Campaign By Conversion Action Name stream
+    """
+    primary_key = ["campaign.id", "segments.conversion_action_name", "segments.date"]
+
+
+class CampaignByProductTypeL2(Campaign):
+    """
+    Campaign By Product Type (2nd Level) stream
+    """
+    primary_key = ["campaign.id", "segments.product_type_l2", "segments.date"]
+
+
+class CampaignByProductTypeL3(Campaign):
+    """
+    Campaign By Product Type (3rd Level) stream
+    """
+    primary_key = ["campaign.id", "segments.product_type_l3", "segments.date"]
+
+
+class CampaignByAdNetworkType(Campaign):
+    """
+    Campaign By Ad Network Type stream
+    """
+    primary_key = ["campaign.id", "segments.ad_network_type", "segments.date"]
+
+
+class AdGroupByDevice(AdGroup):
+    """
+    Ad Group By Device stream
+    """
+    primary_key = ["ad_group.id", "segments.device", "segments.date"]
+
+
+class AdGroupByClickType(AdGroup):
+    """
+    Ad Group By Click Type stream
+    """
+    primary_key = ["ad_group.id", "segments.click_type", "segments.date"]
+
+
+class AdGroupByConversionSource(AdGroup):
+    """
+    Ad Group By Conversion Source stream
+    """
+    primary_key = ["ad_group.id", "segments.external_conversion_source", "segments.date"]
+
+
+class AdGroupByConversionActionName(AdGroup):
+    """
+    Ad Group By Conversion Action Name stream
+    """
+    primary_key = ["ad_group.id", "segments.conversion_action_name", "segments.date"]
+
+
+class AdGroupByAdNetworkType(AdGroup):
+    """
+    Ad Group By Ad Network Type stream
+    """
+    primary_key = ["ad_group.id", "segments.ad_network_type", "segments.date"]
+
+
+class AdGroupAdByKeywordMatchType(AdGroupAd):
+    """
+    Ad Group Ad By Keyword Match Type stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.keyword.info.match_type", "segments.date"]
+
+
+class AdGroupAdByKeywordText(AdGroupAd):
+    """
+    Ad Group Ad By Keyword Text stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.keyword.info.text", "segments.date"]
+
+
+class AdGroupAdByDevice(AdGroupAd):
+    """
+    Ad Group Ad By Device stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.device", "segments.date"]
+
+
+class AdGroupAdByClickType(AdGroupAd):
+    """
+    Ad Group Ad By Click Type stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.click_type", "segments.date"]
+
+
+class AdGroupAdByConversionSource(AdGroupAd):
+    """
+    Ad Group Ad By Conversion Source stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.external_conversion_source", "segments.date"]
+
+
+class AdGroupAdByConversionActionName(AdGroupAd):
+    """
+    Ad Group Ad By Conversion Action Name stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.conversion_action_name", "segments.date"]
+
+
+class AdGroupAdByAdNetworkType(AdGroupAd):
+    """
+    Ad Group Ad By Ad Network Type stream
+    """
+    primary_key = ["ad_group.id", "ad_group_ad.ad.id", "segments.ad_network_type", "segments.date"]
+
+
+class KeywordViewByDevice(KeywordView):
+    """
+    Keyword View By Device stream
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.device", "segments.date"]
+
+
+class KeywordViewByClickType(KeywordView):
+    """
+    Keyword View By Click Type stream
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.click_type", "segments.date"]
+
+
+class KeywordViewByConversionSource(KeywordView):
+    """
+    Keyword View By Conversion Source stream
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.external_conversion_source", "segments.date"]
+
+
+class KeywordViewByConversionActionName(KeywordView):
+    """
+    Keyword View By Conversion Action Name stream
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.conversion_action_name", "segments.date"]
+
+
+class KeywordViewByAdNetworkType(KeywordView):
+    """
+    Keyword View By Ad Network Type stream
+    """
+    primary_key = ["ad_group.id", "ad_group_criterion.criterion_id", "segments.ad_network_type", "segments.date"]
+
+

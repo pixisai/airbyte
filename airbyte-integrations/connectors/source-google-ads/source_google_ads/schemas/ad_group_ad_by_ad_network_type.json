@@ -807,6 +807,10 @@
     "metrics.value_per_conversion": {
       "description": "Average value per conversion in the campaign.",
       "type": ["null", "number"]
+    },
+    "segments.ad_network_type": {
+      "description": "Ad network type segment used for campaign data.",
+      "type": ["null", "string"]
     }
   }
 }

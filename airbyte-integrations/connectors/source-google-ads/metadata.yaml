@@ -60,6 +60,55 @@ data:
       - display_keyword_performance_report
       - shopping_performance_report
       - display_topics_performance_report
+      - campaign_by_date
+      - campaign_by_date_hour
+      - ad_group_by_date_hour
+      - campaign_by_day_of_week
+      - ad_group_by_day_of_week
+      - ad_group_ad_by_day_of_week
+      - keyword_view_by_day_of_week
+      - campaign_by_month
+      - ad_group_by_month
+      - ad_group_ad_by_month
+      - keyword_view_by_month
+      - campaign_by_month_of_year
+      - ad_group_by_month_of_year
+      - ad_group_ad_by_month_of_year
+      - keyword_view_by_month_of_year
+      - campaign_by_quarter
+      - ad_group_by_quarter
+      - ad_group_ad_by_quarter
+      - keyword_view_by_quarter
+      - campaign_by_week
+      - ad_group_by_week
+      - ad_group_ad_by_week
+      - keyword_view_by_week
+      - campaign_by_year
+      - ad_group_by_year
+      - ad_group_ad_by_year
+      - keyword_view_by_year
+      - ad_group_ad_by_ad_network_type
+      - ad_group_ad_by_click_type
+      - ad_group_ad_by_conversion_action_name
+      - ad_group_ad_by_conversion_source
+      - ad_group_ad_by_device
+      - ad_group_ad_by_keyword_match_type
+      - ad_group_ad_by_keyword_text
+      - ad_group_by_ad_network
+      - ad_group_by_click_type
+      - ad_group_by_conversion_action_name
+      - ad_group_by_conversion_source
+      - ad_group_by_device
+      - campaign_by_ad_network_type
+      - campaign_by_click_type
+      - campaign_by_conversion_action_name
+      - campaign_by_conversion_source
+      - campaign_by_device
+      - keyword_view_by_ad_network_type
+      - keyword_view_by_click_type
+      - keyword_view_by_conversion_action_name
+      - keyword_view_by_conversion_source
+      - keyword_view_by_device
   supportLevel: certified
   tags:
     - language:python

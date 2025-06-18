@@ -310,6 +310,10 @@
     "metrics.value_per_conversion": {
       "description": "Value per conversion metric for the campaign.",
       "type": ["null", "number"]
+    },
+    "segments.year": {
+      "description": "The year of the segment.",
+      "type": ["null", "integer"]
     }
   }
 }
